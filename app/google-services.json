@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1034699988850",
+    "project_id": "mindbox-b839e",
+    "storage_bucket": "mindbox-b839e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1034699988850:android:38bf5a800af5c622da47eb",
+        "android_client_info": {
+          "package_name": "xyz.zt.mindbox"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5kyORjMFjgbmCNqEKeqKT_NwqSP-d2-M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
