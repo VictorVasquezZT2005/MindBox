@@ -30,24 +30,18 @@ fun NewNoteScreen(navController: NavController, viewModel: NotesViewModel) {
             CenterAlignedTopAppBar(
                 title = { Text("Nueva Nota", fontWeight = FontWeight.Bold) },
                 navigationIcon = {
-                    // Cambiado de "Cerrar" a icono de X
                     IconButton(onClick = { navController.popBackStack() }) {
                         Icon(Icons.Default.Close, contentDescription = "Cerrar")
                     }
                 },
                 actions = {
-                    // Cambiado de "Listo" a icono de Cheque
                     IconButton(onClick = {
                         val full = if (title.isNotBlank()) "$title\n$content" else content
                         viewModel.addNote(full, selectedType) { success ->
                             if (success) navController.popBackStack()
                         }
                     }) {
-                        Icon(
-                            Icons.Default.Done,
-                            contentDescription = "Guardar",
-                            tint = colorScheme.primary // Color resaltado para guardar
-                        )
+                        Icon(Icons.Default.Done, contentDescription = "Guardar", tint = colorScheme.primary)
                     }
                 }
             )
@@ -59,7 +53,7 @@ fun NewNoteScreen(navController: NavController, viewModel: NotesViewModel) {
                 .padding(padding)
                 .background(colorScheme.surface)
         ) {
-            // Selector de tipo (Chips con colores específicos)
+            // Chips de tipo con los colores que definiste
             Row(
                 modifier = Modifier
                     .fillMaxWidth()
@@ -67,10 +61,11 @@ fun NewNoteScreen(navController: NavController, viewModel: NotesViewModel) {
                 horizontalArrangement = Arrangement.SpaceEvenly
             ) {
                 types.forEach { t ->
-                    val selectedChipColor = when (t) {
+                    val chipColor = when (t) {
                         "Trabajo" -> Color(0xFF2196F3)
                         "Idea" -> Color(0xFF8BC34A)
                         "Urgente" -> Color(0xFFF44336)
+                        "Personal" -> Color(0xFFFF9800)
                         else -> colorScheme.primary
                     }
 
@@ -79,14 +74,14 @@ fun NewNoteScreen(navController: NavController, viewModel: NotesViewModel) {
                         onClick = { selectedType = t },
                         label = { Text(t) },
                         colors = FilterChipDefaults.filterChipColors(
-                            selectedContainerColor = selectedChipColor,
+                            selectedContainerColor = chipColor,
                             selectedLabelColor = Color.White
                         )
                     )
                 }
             }
 
-            // Campo de Título
+            // Título sin indicador de línea
             TextField(
                 value = title,
                 onValueChange = { title = it },
@@ -101,7 +96,7 @@ fun NewNoteScreen(navController: NavController, viewModel: NotesViewModel) {
                 )
             )
 
-            // Contenedor con líneas de cuaderno
+            // Espacio de contenido con líneas de cuaderno
             Box(
                 modifier = Modifier
                     .fillMaxSize()
