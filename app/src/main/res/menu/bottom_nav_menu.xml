@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_dashboard"
+        android:icon="@drawable/home_24"
+        android:title="Inicio" />
+    <item
+        android:id="@+id/nav_notes"
+        android:icon="@drawable/notes_24"
+        android:title="Notas" />
+    <item
+        android:id="@+id/nav_reminders"
+        android:icon="@drawable/reminder_24"
+        android:title="Alertas" />
+    <item
+        android:id="@+id/nav_passwords"
+        android:icon="@drawable/lock_24"
+        android:title="Llaves" />
+</menu>

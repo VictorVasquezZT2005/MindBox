@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent_blue">#1E94F6</color>
+    <color name="accent_green">#10B981</color>
+    <color name="accent_orange">#F59E0B</color>
+    <color name="accent_purple">#8B5CF6</color>
+    <color name="background_dark">#121212</color>
+    <color name="brand_primary">#1E94F6</color>
+    <color name="pitch_black">#121212</color>
+    <color name="surface_dark">#1C1C1E</color>
+    <color name="text_light">#E0E0E0</color>
+    <color name="text_muted">#9CA3AF</color>
+    <string name="default_web_client_id" translatable="false">1034699988850-phitvndqupeb24tgdssd79ffej816voq.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">1034699988850</string>
+    <string name="google_api_key" translatable="false">AIzaSyB5kyORjMFjgbmCNqEKeqKT_NwqSP-d2-M</string>
+    <string name="google_app_id" translatable="false">1:1034699988850:android:a291a2ff619a7341da47eb</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyB5kyORjMFjgbmCNqEKeqKT_NwqSP-d2-M</string>
+    <string name="google_storage_bucket" translatable="false">mindbox-b839e.firebasestorage.app</string>
+    <string name="project_id" translatable="false">mindbox-b839e</string>
+    <style name="AccentBar">
+        <item name="android:layout_width">32dp</item>
+        <item name="android:layout_height">4dp</item>
+        <item name="android:layout_marginTop">40dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+    <style name="AlertDialogCustom" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">@color/surface_dark</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:textColorSecondary">@color/text_muted</item>
+        <item name="colorAccent">@color/brand_primary</item>
+    </style>
+    <style name="CardText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="DashboardCardContent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="DashboardCardStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">150dp</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="cardCornerRadius">20dp</item>
+        <item name="cardElevation">0dp</item>
+        <item name="cardBackgroundColor">@color/surface_dark</item>
+    </style>
+    <style name="DashboardIcon">
+        <item name="android:layout_width">24dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:layout_marginTop">-32dp</item>
+        <item name="android:layout_marginStart">8dp</item>
+    </style>
+    <style name="IconBackground">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+    <style name="Theme.MindBox" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/pitch_black</item>
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="colorAccent">@color/brand_primary</item>
+        <item name="android:windowBackground">@color/pitch_black</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="alertDialogTheme">@style/AlertDialogCustom</item>
+    </style>
+</resources>

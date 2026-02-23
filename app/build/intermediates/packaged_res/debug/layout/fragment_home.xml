@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MindBox"
+                android:textSize="22sp"
+                android:fontFamily="sans-serif-black"
+                android:textColor="#FFFFFF"
+                android:letterSpacing="-0.02"/>
+            
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btnProfileHeader"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#2C2C2E"
+                app:cardElevation="0dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/account_circle_24"
+                    app:tint="@color/accent_blue" />
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvWelcomeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hola, Victor"
+            android:textSize="32sp"
+            android:layout_marginTop="32dp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif-black"
+            android:lineSpacingExtra="-4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bienvenido de vuelta a tu cuaderno digital."
+            android:textColor="@color/text_muted"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ACCESOS RÁPIDOS"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginTop="48dp"
+            android:layout_marginBottom="16dp"
+            android:textColor="@color/text_muted"
+            android:letterSpacing="0.1"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:alignmentMode="alignMargins">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardCourses"
+                style="@style/DashboardCardStyle">
+                <LinearLayout style="@style/DashboardCardContent">
+                    <View style="@style/IconBackground" android:background="#1A1E94F6"/>
+                    <ImageView style="@style/DashboardIcon" android:src="@drawable/school_24" app:tint="@color/accent_blue"/>
+                    <View style="@style/AccentBar" android:background="@color/accent_blue"/>
+                    <TextView style="@style/CardText" android:text="Mis Cursos"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardNetwork"
+                style="@style/DashboardCardStyle">
+                <LinearLayout style="@style/DashboardCardContent">
+                    <View style="@style/IconBackground" android:background="#1A10B981"/>
+                    <ImageView style="@style/DashboardIcon" android:src="@drawable/leaderboard_24" app:tint="@color/accent_green"/>
+                    <View style="@style/AccentBar" android:background="@color/accent_green"/>
+                    <TextView style="@style/CardText" android:text="Mi Red"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardScanner"
+                style="@style/DashboardCardStyle">
+                <LinearLayout style="@style/DashboardCardContent">
+                    <View style="@style/IconBackground" android:background="#1AF59E0B"/>
+                    <ImageView style="@style/DashboardIcon" android:src="@drawable/document_scanner_24" app:tint="@color/accent_orange"/>
+                    <View style="@style/AccentBar" android:background="@color/accent_orange"/>
+                    <TextView style="@style/CardText" android:text="Escáner ID"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardResume"
+                style="@style/DashboardCardStyle">
+                <LinearLayout style="@style/DashboardCardContent">
+                    <View style="@style/IconBackground" android:background="#1A8B5CF6"/>
+                    <ImageView style="@style/DashboardIcon" android:src="@drawable/docs_24" app:tint="@color/accent_purple"/>
+                    <View style="@style/AccentBar" android:background="@color/accent_purple"/>
+                    <TextView style="@style/CardText" android:text="Mi CV"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
