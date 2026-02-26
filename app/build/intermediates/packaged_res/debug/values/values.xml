@@ -10,6 +10,7 @@
     <color name="surface_dark">#1C1C1E</color>
     <color name="text_light">#E0E0E0</color>
     <color name="text_muted">#9CA3AF</color>
+    <color name="white">#FFFFFF</color>
     <string name="default_web_client_id" translatable="false">1034699988850-phitvndqupeb24tgdssd79ffej816voq.apps.googleusercontent.com</string>
     <string name="gcm_defaultSenderId" translatable="false">1034699988850</string>
     <string name="google_api_key" translatable="false">AIzaSyB5kyORjMFjgbmCNqEKeqKT_NwqSP-d2-M</string>

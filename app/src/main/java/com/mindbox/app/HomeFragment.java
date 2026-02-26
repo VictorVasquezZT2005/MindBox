@@ -29,26 +29,41 @@ public class HomeFragment extends Fragment {
 
         // 1. Cargar nombre desde Firestore
         if (mAuth.getCurrentUser() != null) {
-            String uid = mAuth.getCurrentUser().getUid();
-            db.collection("users").document(uid).get()
+            db.collection("users").document(mAuth.getUid()).get()
                 .addOnSuccessListener(doc -> {
                     if (doc.exists() && isAdded()) {
-                        String name = doc.getString("name");
-                        tvWelcomeName.setText("Hola, " + name);
+                        tvWelcomeName.setText("Hola, " + doc.getString("name"));
                     }
                 });
         }
 
-        // 2. Navegación de tarjetas
-        view.findViewById(R.id.cardNetwork).setOnClickListener(v -> navegarAFramento(new StatsFragment()));
-        view.findViewById(R.id.cardScanner).setOnClickListener(v -> navegarAFramento(new PasswordsFragment()));
-        
+        // 2. NAVEGACIÓN HACIA ACTIVIDADES (Flujo independiente)
+
+        // Cursos -> CertificatesActivity
+        view.findViewById(R.id.cardCourses).setOnClickListener(v -> {
+            startActivity(new Intent(getActivity(), CertificatesActivity.class));
+        });
+
+        // Red -> StatsActivity (CAMBIADO: De Fragment a Activity)
+        view.findViewById(R.id.cardNetwork).setOnClickListener(v -> {
+            startActivity(new Intent(getActivity(), StatsActivity.class));
+        });
+
+        // CV -> ResumeActivity
         view.findViewById(R.id.cardResume).setOnClickListener(v -> {
             startActivity(new Intent(getActivity(), ResumeActivity.class));
         });
 
-        // Icono de perfil en el header
-        view.findViewById(R.id.btnProfileHeader).setOnClickListener(v -> navegarAFramento(new ProfileFragment()));
+        // Perfil Header -> ProfileActivity
+        view.findViewById(R.id.btnProfileHeader).setOnClickListener(v -> {
+            startActivity(new Intent(getActivity(), ProfileActivity.class));
+        });
+
+
+        // 3. NAVEGACIÓN HACIA FRAGMENTOS (Flujo interno del Dashboard)
+
+        // Scanner -> PasswordsFragment (Mantenemos como Fragment si así lo deseas)
+        view.findViewById(R.id.cardScanner).setOnClickListener(v -> navegarAFramento(new PasswordsFragment()));
 
         return view;
     }

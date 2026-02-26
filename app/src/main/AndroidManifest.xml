@@ -27,9 +27,13 @@
         <activity android:name=".ForgotPasswordActivity" android:exported="false" />
         <activity android:name=".DashboardActivity" android:exported="false" />
         <activity android:name=".ProfileActivity" android:exported="false" />
+        <activity android:name=".EditProfileActivity" android:exported="false" />
         <activity android:name=".StatsActivity" android:exported="false" />
         <activity android:name=".ResumeActivity" android:exported="false" />
         <activity android:name=".AddPasswordActivity" android:exported="false" />
+        <activity android:name=".CertificatesActivity" android:exported="false" />
+        <activity android:name=".AddCertificateActivity" android:exported="false" />
+        <activity android:name=".CertificateDetailActivity" android:exported="false" />
 
         <provider
             android:name="androidx.core.content.FileProvider"

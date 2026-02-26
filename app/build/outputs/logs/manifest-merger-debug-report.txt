@@ -1,20 +1,20 @@
 -- Merging decision tree log ---
 provider#androidx.core.content.FileProvider
-INJECTED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:34:9-42:20
+INJECTED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:38:9-46:20
 	android:grantUriPermissions
-		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:38:13-47
+		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:42:13-47
 	android:authorities
 		INJECTED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml
-		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:36:13-60
+		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:40:13-60
 	android:exported
-		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:37:13-37
+		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:41:13-37
 	android:name
-		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:35:13-62
+		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:39:13-62
 manifest
-ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:2:1-46:12
-INJECTED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:2:1-46:12
-INJECTED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:2:1-46:12
-INJECTED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:2:1-46:12
+ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:2:1-50:12
+INJECTED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:2:1-50:12
+INJECTED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:2:1-50:12
+INJECTED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:2:1-50:12
 MERGED from [com.google.android.material:material:1.11.0] /home/vvasq/.gradle/caches/transforms-3/c4516863a6091d4c9ba15b190e296f48/transformed/material-1.11.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /home/vvasq/.gradle/caches/transforms-3/1ea281c3562e25a425f624d9cf8cf3af/transformed/constraintlayout-2.1.4/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.camera:camera-video:1.3.1] /home/vvasq/.gradle/caches/transforms-3/f4f872a43d570460dc0cc04a9bd05134/transformed/jetified-camera-video-1.3.1/AndroidManifest.xml:2:1-7:12
@@ -30,6 +30,8 @@ MERGED from [com.google.firebase:firebase-auth:22.3.1] /home/vvasq/.gradle/cache
 MERGED from [com.google.firebase:firebase-firestore:24.10.1] /home/vvasq/.gradle/caches/transforms-3/dccab7e9571e08e747f276853a482196/transformed/jetified-firebase-firestore-24.10.1/AndroidManifest.xml:2:1-26:12
 MERGED from [com.google.mlkit:barcode-scanning:17.2.0] /home/vvasq/.gradle/caches/transforms-3/1d1518cd90d021f4efc213d3a092165a/transformed/jetified-barcode-scanning-17.2.0/AndroidManifest.xml:2:1-7:12
 MERGED from [io.grpc:grpc-android:1.57.2] /home/vvasq/.gradle/caches/transforms-3/e79c4b813da35584dbbbd70ac633c436/transformed/jetified-grpc-android-1.57.2/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-storage:20.3.0] /home/vvasq/.gradle/caches/transforms-3/cc71cbf2132731959004fbe3f1fcb305/transformed/jetified-firebase-storage-20.3.0/AndroidManifest.xml:15:1-39:12
+MERGED from [com.google.firebase:firebase-appcheck:17.1.1] /home/vvasq/.gradle/caches/transforms-3/2955b5ec7db2cfca355812748d0c72bb/transformed/jetified-firebase-appcheck-17.1.1/AndroidManifest.xml:15:1-34:12
 MERGED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] /home/vvasq/.gradle/caches/transforms-3/41671d7436aa1e406dd3d95e3fef4573/transformed/jetified-play-services-mlkit-barcode-scanning-18.3.0/AndroidManifest.xml:2:1-18:12
 MERGED from [com.google.mlkit:barcode-scanning-common:17.0.0] /home/vvasq/.gradle/caches/transforms-3/871bf9960f13828e70d37023887191cd/transformed/jetified-barcode-scanning-common-17.0.0/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.mlkit:vision-common:17.3.0] /home/vvasq/.gradle/caches/transforms-3/60a91d9bf1053eaf29d71e935943554c/transformed/jetified-vision-common-17.3.0/AndroidManifest.xml:2:1-18:12
@@ -40,10 +42,10 @@ MERGED from [com.google.firebase:firebase-common-ktx:20.4.2] /home/vvasq/.gradle
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /home/vvasq/.gradle/caches/transforms-3/ad727414947a93e29e5f71597f9d5e51/transformed/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.firebase:firebase-common:20.4.2] /home/vvasq/.gradle/caches/transforms-3/d019571ef2abaad77d1edd8a6671d4e0/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:15:1-41:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/vvasq/.gradle/caches/transforms-3/a54d2f9811844510ef5b974e5e7cfe33/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:firebase-appcheck-interop:17.1.0] /home/vvasq/.gradle/caches/transforms-3/ff70ac15c18a74ff093d35c1a2f860fd/transformed/jetified-firebase-appcheck-interop-17.1.0/AndroidManifest.xml:15:1-23:12
 MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] /home/vvasq/.gradle/caches/transforms-3/a90a3b718a860a71313e47b0c744912b/transformed/jetified-play-services-auth-api-phone-17.4.0/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] /home/vvasq/.gradle/caches/transforms-3/09809f145d6826f337b3fdb252753ab2/transformed/jetified-recaptcha-18.4.0/AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.android.play:integrity:1.2.0] /home/vvasq/.gradle/caches/transforms-3/6b5f1b43cd57f304c00395cb928ce802/transformed/jetified-integrity-1.2.0/AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.0] /home/vvasq/.gradle/caches/transforms-3/a5794a60b3e20f35d3010c9b26f86f3b/transformed/jetified-firebase-appcheck-interop-17.0.0/AndroidManifest.xml:15:1-25:12
 MERGED from [com.google.firebase:firebase-database-collection:18.0.1] /home/vvasq/.gradle/caches/transforms-3/f7ca55ba346648812cbe184fc66f38d5/transformed/jetified-firebase-database-collection-18.0.1/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-base:18.1.0] /home/vvasq/.gradle/caches/transforms-3/d1874ddb2fd4f75328b3dd679af5d403/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:16:1-24:12
 MERGED from [com.google.mlkit:vision-interfaces:16.2.0] /home/vvasq/.gradle/caches/transforms-3/f689abdde76b15820f54117a108506be/transformed/jetified-vision-interfaces-16.2.0/AndroidManifest.xml:2:1-7:12
@@ -80,8 +82,8 @@ MERGED from [androidx.fragment:fragment:1.3.6] /home/vvasq/.gradle/caches/transf
 MERGED from [androidx.activity:activity:1.8.0] /home/vvasq/.gradle/caches/transforms-3/17d77a0d32016f8e23f9b39b93d004ae/transformed/jetified-activity-1.8.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/vvasq/.gradle/caches/transforms-3/321267d11ab87fd22ed294d9d0c8925f/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.exifinterface:exifinterface:1.3.2] /home/vvasq/.gradle/caches/transforms-3/2de60f08e65fcad750a6b675ae3239cf/transformed/exifinterface-1.3.2/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/vvasq/.gradle/caches/transforms-3/fd7c130a11771b4589880a5cb74f6030/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-components:17.1.5] /home/vvasq/.gradle/caches/transforms-3/9611b34b3812c3b06672b354c811a917/transformed/jetified-firebase-components-17.1.5/AndroidManifest.xml:15:1-20:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/vvasq/.gradle/caches/transforms-3/fd7c130a11771b4589880a5cb74f6030/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/vvasq/.gradle/caches/transforms-3/585beb8879da8872a9d10abcea92c426/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/vvasq/.gradle/caches/transforms-3/fda0b303d1970346be7c48040ee9a8e9/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:17:1-55:12
 MERGED from [androidx.startup:startup-runtime:1.1.1] /home/vvasq/.gradle/caches/transforms-3/f4ca90143c218eed34f5d216a32853df/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
@@ -109,6 +111,8 @@ MERGED from [com.google.firebase:firebase-auth:22.3.1] /home/vvasq/.gradle/cache
 MERGED from [com.google.firebase:firebase-auth:22.3.1] /home/vvasq/.gradle/caches/transforms-3/2d922cba6258b46eecc4d0307b29d646/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:25:5-67
 MERGED from [com.google.firebase:firebase-firestore:24.10.1] /home/vvasq/.gradle/caches/transforms-3/dccab7e9571e08e747f276853a482196/transformed/jetified-firebase-firestore-24.10.1/AndroidManifest.xml:11:5-67
 MERGED from [com.google.firebase:firebase-firestore:24.10.1] /home/vvasq/.gradle/caches/transforms-3/dccab7e9571e08e747f276853a482196/transformed/jetified-firebase-firestore-24.10.1/AndroidManifest.xml:11:5-67
+MERGED from [com.google.firebase:firebase-storage:20.3.0] /home/vvasq/.gradle/caches/transforms-3/cc71cbf2132731959004fbe3f1fcb305/transformed/jetified-firebase-storage-20.3.0/AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-storage:20.3.0] /home/vvasq/.gradle/caches/transforms-3/cc71cbf2132731959004fbe3f1fcb305/transformed/jetified-firebase-storage-20.3.0/AndroidManifest.xml:24:5-67
 MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/vvasq/.gradle/caches/transforms-3/95e9d4920836e03390b5d1c2b0b93de5/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:26:5-67
 MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/vvasq/.gradle/caches/transforms-3/95e9d4920836e03390b5d1c2b0b93de5/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:26:5-67
 MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] /home/vvasq/.gradle/caches/transforms-3/09809f145d6826f337b3fdb252753ab2/transformed/jetified-recaptcha-18.4.0/AndroidManifest.xml:7:5-67
@@ -123,6 +127,8 @@ MERGED from [com.google.firebase:firebase-firestore:24.10.1] /home/vvasq/.gradle
 MERGED from [com.google.firebase:firebase-firestore:24.10.1] /home/vvasq/.gradle/caches/transforms-3/dccab7e9571e08e747f276853a482196/transformed/jetified-firebase-firestore-24.10.1/AndroidManifest.xml:10:5-79
 MERGED from [io.grpc:grpc-android:1.57.2] /home/vvasq/.gradle/caches/transforms-3/e79c4b813da35584dbbbd70ac633c436/transformed/jetified-grpc-android-1.57.2/AndroidManifest.xml:7:5-79
 MERGED from [io.grpc:grpc-android:1.57.2] /home/vvasq/.gradle/caches/transforms-3/e79c4b813da35584dbbbd70ac633c436/transformed/jetified-grpc-android-1.57.2/AndroidManifest.xml:7:5-79
+MERGED from [com.google.firebase:firebase-storage:20.3.0] /home/vvasq/.gradle/caches/transforms-3/cc71cbf2132731959004fbe3f1fcb305/transformed/jetified-firebase-storage-20.3.0/AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-storage:20.3.0] /home/vvasq/.gradle/caches/transforms-3/cc71cbf2132731959004fbe3f1fcb305/transformed/jetified-firebase-storage-20.3.0/AndroidManifest.xml:23:5-79
 MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/vvasq/.gradle/caches/transforms-3/95e9d4920836e03390b5d1c2b0b93de5/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:25:5-79
 MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/vvasq/.gradle/caches/transforms-3/95e9d4920836e03390b5d1c2b0b93de5/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:25:5-79
 MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] /home/vvasq/.gradle/caches/transforms-3/09809f145d6826f337b3fdb252753ab2/transformed/jetified-recaptcha-18.4.0/AndroidManifest.xml:8:5-79
@@ -140,8 +146,8 @@ ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/Android
 	android:name
 		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:7:22-80
 application
-ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:9:5-44:19
-INJECTED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:9:5-44:19
+ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:9:5-48:19
+INJECTED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:9:5-48:19
 MERGED from [com.google.android.material:material:1.11.0] /home/vvasq/.gradle/caches/transforms-3/c4516863a6091d4c9ba15b190e296f48/transformed/material-1.11.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.11.0] /home/vvasq/.gradle/caches/transforms-3/c4516863a6091d4c9ba15b190e296f48/transformed/material-1.11.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /home/vvasq/.gradle/caches/transforms-3/1ea281c3562e25a425f624d9cf8cf3af/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
@@ -154,6 +160,10 @@ MERGED from [com.google.firebase:firebase-auth:22.3.1] /home/vvasq/.gradle/cache
 MERGED from [com.google.firebase:firebase-auth:22.3.1] /home/vvasq/.gradle/caches/transforms-3/2d922cba6258b46eecc4d0307b29d646/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:28:5-73:19
 MERGED from [com.google.firebase:firebase-firestore:24.10.1] /home/vvasq/.gradle/caches/transforms-3/dccab7e9571e08e747f276853a482196/transformed/jetified-firebase-firestore-24.10.1/AndroidManifest.xml:13:5-24:19
 MERGED from [com.google.firebase:firebase-firestore:24.10.1] /home/vvasq/.gradle/caches/transforms-3/dccab7e9571e08e747f276853a482196/transformed/jetified-firebase-firestore-24.10.1/AndroidManifest.xml:13:5-24:19
+MERGED from [com.google.firebase:firebase-storage:20.3.0] /home/vvasq/.gradle/caches/transforms-3/cc71cbf2132731959004fbe3f1fcb305/transformed/jetified-firebase-storage-20.3.0/AndroidManifest.xml:26:5-37:19
+MERGED from [com.google.firebase:firebase-storage:20.3.0] /home/vvasq/.gradle/caches/transforms-3/cc71cbf2132731959004fbe3f1fcb305/transformed/jetified-firebase-storage-20.3.0/AndroidManifest.xml:26:5-37:19
+MERGED from [com.google.firebase:firebase-appcheck:17.1.1] /home/vvasq/.gradle/caches/transforms-3/2955b5ec7db2cfca355812748d0c72bb/transformed/jetified-firebase-appcheck-17.1.1/AndroidManifest.xml:21:5-32:19
+MERGED from [com.google.firebase:firebase-appcheck:17.1.1] /home/vvasq/.gradle/caches/transforms-3/2955b5ec7db2cfca355812748d0c72bb/transformed/jetified-firebase-appcheck-17.1.1/AndroidManifest.xml:21:5-32:19
 MERGED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] /home/vvasq/.gradle/caches/transforms-3/41671d7436aa1e406dd3d95e3fef4573/transformed/jetified-play-services-mlkit-barcode-scanning-18.3.0/AndroidManifest.xml:8:5-16:19
 MERGED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] /home/vvasq/.gradle/caches/transforms-3/41671d7436aa1e406dd3d95e3fef4573/transformed/jetified-play-services-mlkit-barcode-scanning-18.3.0/AndroidManifest.xml:8:5-16:19
 MERGED from [com.google.mlkit:vision-common:17.3.0] /home/vvasq/.gradle/caches/transforms-3/60a91d9bf1053eaf29d71e935943554c/transformed/jetified-vision-common-17.3.0/AndroidManifest.xml:8:5-16:19
@@ -168,10 +178,10 @@ MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /home/vvasq/.grad
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /home/vvasq/.gradle/caches/transforms-3/ad727414947a93e29e5f71597f9d5e51/transformed/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.firebase:firebase-common:20.4.2] /home/vvasq/.gradle/caches/transforms-3/d019571ef2abaad77d1edd8a6671d4e0/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:22:5-39:19
 MERGED from [com.google.firebase:firebase-common:20.4.2] /home/vvasq/.gradle/caches/transforms-3/d019571ef2abaad77d1edd8a6671d4e0/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:22:5-39:19
+MERGED from [com.google.firebase:firebase-appcheck-interop:17.1.0] /home/vvasq/.gradle/caches/transforms-3/ff70ac15c18a74ff093d35c1a2f860fd/transformed/jetified-firebase-appcheck-interop-17.1.0/AndroidManifest.xml:21:5-20
+MERGED from [com.google.firebase:firebase-appcheck-interop:17.1.0] /home/vvasq/.gradle/caches/transforms-3/ff70ac15c18a74ff093d35c1a2f860fd/transformed/jetified-firebase-appcheck-interop-17.1.0/AndroidManifest.xml:21:5-20
 MERGED from [com.google.android.play:integrity:1.2.0] /home/vvasq/.gradle/caches/transforms-3/6b5f1b43cd57f304c00395cb928ce802/transformed/jetified-integrity-1.2.0/AndroidManifest.xml:5:5-6:19
 MERGED from [com.google.android.play:integrity:1.2.0] /home/vvasq/.gradle/caches/transforms-3/6b5f1b43cd57f304c00395cb928ce802/transformed/jetified-integrity-1.2.0/AndroidManifest.xml:5:5-6:19
-MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.0] /home/vvasq/.gradle/caches/transforms-3/a5794a60b3e20f35d3010c9b26f86f3b/transformed/jetified-firebase-appcheck-interop-17.0.0/AndroidManifest.xml:23:5-20
-MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.0] /home/vvasq/.gradle/caches/transforms-3/a5794a60b3e20f35d3010c9b26f86f3b/transformed/jetified-firebase-appcheck-interop-17.0.0/AndroidManifest.xml:23:5-20
 MERGED from [com.google.android.gms:play-services-base:18.1.0] /home/vvasq/.gradle/caches/transforms-3/d1874ddb2fd4f75328b3dd679af5d403/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:19:5-23:19
 MERGED from [com.google.android.gms:play-services-base:18.1.0] /home/vvasq/.gradle/caches/transforms-3/d1874ddb2fd4f75328b3dd679af5d403/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:19:5-23:19
 MERGED from [androidx.emoji2:emoji2:1.2.0] /home/vvasq/.gradle/caches/transforms-3/dbcee3e5e1daa1b7fccf2b6dc73eed54/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:23:5-33:19
@@ -250,30 +260,54 @@ ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/Android
 		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:29:51-75
 	android:name
 		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:29:19-50
+activity#com.mindbox.app.EditProfileActivity
+ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:30:9-82
+	android:exported
+		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:30:55-79
+	android:name
+		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:30:19-54
 activity#com.mindbox.app.StatsActivity
-ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:30:9-76
+ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:31:9-76
 	android:exported
-		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:30:49-73
+		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:31:49-73
 	android:name
-		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:30:19-48
+		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:31:19-48
 activity#com.mindbox.app.ResumeActivity
-ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:31:9-77
+ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:32:9-77
 	android:exported
-		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:31:50-74
+		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:32:50-74
 	android:name
-		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:31:19-49
+		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:32:19-49
 activity#com.mindbox.app.AddPasswordActivity
-ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:32:9-82
+ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:33:9-82
 	android:exported
-		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:32:55-79
+		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:33:55-79
 	android:name
-		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:32:19-54
+		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:33:19-54
+activity#com.mindbox.app.CertificatesActivity
+ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:34:9-83
+	android:exported
+		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:34:56-80
+	android:name
+		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:34:19-55
+activity#com.mindbox.app.AddCertificateActivity
+ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:35:9-85
+	android:exported
+		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:35:58-82
+	android:name
+		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:35:19-57
+activity#com.mindbox.app.CertificateDetailActivity
+ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:36:9-88
+	android:exported
+		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:36:61-85
+	android:name
+		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:36:19-60
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:39:13-41:54
+ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:43:13-45:54
 	android:resource
-		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:41:17-51
+		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:45:17-51
 	android:name
-		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:40:17-67
+		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:44:17-67
 uses-sdk
 INJECTED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml
@@ -308,6 +342,10 @@ MERGED from [com.google.mlkit:barcode-scanning:17.2.0] /home/vvasq/.gradle/cache
 MERGED from [com.google.mlkit:barcode-scanning:17.2.0] /home/vvasq/.gradle/caches/transforms-3/1d1518cd90d021f4efc213d3a092165a/transformed/jetified-barcode-scanning-17.2.0/AndroidManifest.xml:5:5-44
 MERGED from [io.grpc:grpc-android:1.57.2] /home/vvasq/.gradle/caches/transforms-3/e79c4b813da35584dbbbd70ac633c436/transformed/jetified-grpc-android-1.57.2/AndroidManifest.xml:5:5-44
 MERGED from [io.grpc:grpc-android:1.57.2] /home/vvasq/.gradle/caches/transforms-3/e79c4b813da35584dbbbd70ac633c436/transformed/jetified-grpc-android-1.57.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-storage:20.3.0] /home/vvasq/.gradle/caches/transforms-3/cc71cbf2132731959004fbe3f1fcb305/transformed/jetified-firebase-storage-20.3.0/AndroidManifest.xml:19:5-44
+MERGED from [com.google.firebase:firebase-storage:20.3.0] /home/vvasq/.gradle/caches/transforms-3/cc71cbf2132731959004fbe3f1fcb305/transformed/jetified-firebase-storage-20.3.0/AndroidManifest.xml:19:5-44
+MERGED from [com.google.firebase:firebase-appcheck:17.1.1] /home/vvasq/.gradle/caches/transforms-3/2955b5ec7db2cfca355812748d0c72bb/transformed/jetified-firebase-appcheck-17.1.1/AndroidManifest.xml:18:5-44
+MERGED from [com.google.firebase:firebase-appcheck:17.1.1] /home/vvasq/.gradle/caches/transforms-3/2955b5ec7db2cfca355812748d0c72bb/transformed/jetified-firebase-appcheck-17.1.1/AndroidManifest.xml:18:5-44
 MERGED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] /home/vvasq/.gradle/caches/transforms-3/41671d7436aa1e406dd3d95e3fef4573/transformed/jetified-play-services-mlkit-barcode-scanning-18.3.0/AndroidManifest.xml:6:5-44
 MERGED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] /home/vvasq/.gradle/caches/transforms-3/41671d7436aa1e406dd3d95e3fef4573/transformed/jetified-play-services-mlkit-barcode-scanning-18.3.0/AndroidManifest.xml:6:5-44
 MERGED from [com.google.mlkit:barcode-scanning-common:17.0.0] /home/vvasq/.gradle/caches/transforms-3/871bf9960f13828e70d37023887191cd/transformed/jetified-barcode-scanning-common-17.0.0/AndroidManifest.xml:5:5-44
@@ -328,14 +366,14 @@ MERGED from [com.google.firebase:firebase-common:20.4.2] /home/vvasq/.gradle/cac
 MERGED from [com.google.firebase:firebase-common:20.4.2] /home/vvasq/.gradle/caches/transforms-3/d019571ef2abaad77d1edd8a6671d4e0/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:19:5-44
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/vvasq/.gradle/caches/transforms-3/a54d2f9811844510ef5b974e5e7cfe33/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/vvasq/.gradle/caches/transforms-3/a54d2f9811844510ef5b974e5e7cfe33/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-appcheck-interop:17.1.0] /home/vvasq/.gradle/caches/transforms-3/ff70ac15c18a74ff093d35c1a2f860fd/transformed/jetified-firebase-appcheck-interop-17.1.0/AndroidManifest.xml:18:5-44
+MERGED from [com.google.firebase:firebase-appcheck-interop:17.1.0] /home/vvasq/.gradle/caches/transforms-3/ff70ac15c18a74ff093d35c1a2f860fd/transformed/jetified-firebase-appcheck-interop-17.1.0/AndroidManifest.xml:18:5-44
 MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] /home/vvasq/.gradle/caches/transforms-3/a90a3b718a860a71313e47b0c744912b/transformed/jetified-play-services-auth-api-phone-17.4.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] /home/vvasq/.gradle/caches/transforms-3/a90a3b718a860a71313e47b0c744912b/transformed/jetified-play-services-auth-api-phone-17.4.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] /home/vvasq/.gradle/caches/transforms-3/09809f145d6826f337b3fdb252753ab2/transformed/jetified-recaptcha-18.4.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] /home/vvasq/.gradle/caches/transforms-3/09809f145d6826f337b3fdb252753ab2/transformed/jetified-recaptcha-18.4.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.play:integrity:1.2.0] /home/vvasq/.gradle/caches/transforms-3/6b5f1b43cd57f304c00395cb928ce802/transformed/jetified-integrity-1.2.0/AndroidManifest.xml:4:5-44
 MERGED from [com.google.android.play:integrity:1.2.0] /home/vvasq/.gradle/caches/transforms-3/6b5f1b43cd57f304c00395cb928ce802/transformed/jetified-integrity-1.2.0/AndroidManifest.xml:4:5-44
-MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.0] /home/vvasq/.gradle/caches/transforms-3/a5794a60b3e20f35d3010c9b26f86f3b/transformed/jetified-firebase-appcheck-interop-17.0.0/AndroidManifest.xml:18:5-20:41
-MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.0] /home/vvasq/.gradle/caches/transforms-3/a5794a60b3e20f35d3010c9b26f86f3b/transformed/jetified-firebase-appcheck-interop-17.0.0/AndroidManifest.xml:18:5-20:41
 MERGED from [com.google.firebase:firebase-database-collection:18.0.1] /home/vvasq/.gradle/caches/transforms-3/f7ca55ba346648812cbe184fc66f38d5/transformed/jetified-firebase-database-collection-18.0.1/AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.firebase:firebase-database-collection:18.0.1] /home/vvasq/.gradle/caches/transforms-3/f7ca55ba346648812cbe184fc66f38d5/transformed/jetified-firebase-database-collection-18.0.1/AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.android.gms:play-services-base:18.1.0] /home/vvasq/.gradle/caches/transforms-3/d1874ddb2fd4f75328b3dd679af5d403/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:18:5-43
@@ -408,10 +446,10 @@ MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/vvasq/.gradle/cac
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/vvasq/.gradle/caches/transforms-3/321267d11ab87fd22ed294d9d0c8925f/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.exifinterface:exifinterface:1.3.2] /home/vvasq/.gradle/caches/transforms-3/2de60f08e65fcad750a6b675ae3239cf/transformed/exifinterface-1.3.2/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.exifinterface:exifinterface:1.3.2] /home/vvasq/.gradle/caches/transforms-3/2de60f08e65fcad750a6b675ae3239cf/transformed/exifinterface-1.3.2/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/vvasq/.gradle/caches/transforms-3/fd7c130a11771b4589880a5cb74f6030/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/vvasq/.gradle/caches/transforms-3/fd7c130a11771b4589880a5cb74f6030/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-components:17.1.5] /home/vvasq/.gradle/caches/transforms-3/9611b34b3812c3b06672b354c811a917/transformed/jetified-firebase-components-17.1.5/AndroidManifest.xml:18:5-44
 MERGED from [com.google.firebase:firebase-components:17.1.5] /home/vvasq/.gradle/caches/transforms-3/9611b34b3812c3b06672b354c811a917/transformed/jetified-firebase-components-17.1.5/AndroidManifest.xml:18:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/vvasq/.gradle/caches/transforms-3/fd7c130a11771b4589880a5cb74f6030/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/vvasq/.gradle/caches/transforms-3/fd7c130a11771b4589880a5cb74f6030/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/vvasq/.gradle/caches/transforms-3/585beb8879da8872a9d10abcea92c426/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/vvasq/.gradle/caches/transforms-3/585beb8879da8872a9d10abcea92c426/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/vvasq/.gradle/caches/transforms-3/fda0b303d1970346be7c48040ee9a8e9/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:21:5-44
@@ -516,6 +554,10 @@ service#com.google.firebase.components.ComponentDiscoveryService
 ADDED from [com.google.firebase:firebase-auth:22.3.1] /home/vvasq/.gradle/caches/transforms-3/2d922cba6258b46eecc4d0307b29d646/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:66:9-72:19
 MERGED from [com.google.firebase:firebase-firestore:24.10.1] /home/vvasq/.gradle/caches/transforms-3/dccab7e9571e08e747f276853a482196/transformed/jetified-firebase-firestore-24.10.1/AndroidManifest.xml:14:9-23:19
 MERGED from [com.google.firebase:firebase-firestore:24.10.1] /home/vvasq/.gradle/caches/transforms-3/dccab7e9571e08e747f276853a482196/transformed/jetified-firebase-firestore-24.10.1/AndroidManifest.xml:14:9-23:19
+MERGED from [com.google.firebase:firebase-storage:20.3.0] /home/vvasq/.gradle/caches/transforms-3/cc71cbf2132731959004fbe3f1fcb305/transformed/jetified-firebase-storage-20.3.0/AndroidManifest.xml:27:9-36:19
+MERGED from [com.google.firebase:firebase-storage:20.3.0] /home/vvasq/.gradle/caches/transforms-3/cc71cbf2132731959004fbe3f1fcb305/transformed/jetified-firebase-storage-20.3.0/AndroidManifest.xml:27:9-36:19
+MERGED from [com.google.firebase:firebase-appcheck:17.1.1] /home/vvasq/.gradle/caches/transforms-3/2955b5ec7db2cfca355812748d0c72bb/transformed/jetified-firebase-appcheck-17.1.1/AndroidManifest.xml:22:9-31:19
+MERGED from [com.google.firebase:firebase-appcheck:17.1.1] /home/vvasq/.gradle/caches/transforms-3/2955b5ec7db2cfca355812748d0c72bb/transformed/jetified-firebase-appcheck-17.1.1/AndroidManifest.xml:22:9-31:19
 MERGED from [com.google.firebase:firebase-common-ktx:20.4.2] /home/vvasq/.gradle/caches/transforms-3/c6a47b42b84a60983718c700f4ae4e58/transformed/jetified-firebase-common-ktx-20.4.2/AndroidManifest.xml:9:9-15:19
 MERGED from [com.google.firebase:firebase-common-ktx:20.4.2] /home/vvasq/.gradle/caches/transforms-3/c6a47b42b84a60983718c700f4ae4e58/transformed/jetified-firebase-common-ktx-20.4.2/AndroidManifest.xml:9:9-15:19
 MERGED from [com.google.firebase:firebase-common:20.4.2] /home/vvasq/.gradle/caches/transforms-3/d019571ef2abaad77d1edd8a6671d4e0/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:30:9-38:19
@@ -546,6 +588,30 @@ ADDED from [com.google.firebase:firebase-firestore:24.10.1] /home/vvasq/.gradle/
 		ADDED from [com.google.firebase:firebase-firestore:24.10.1] /home/vvasq/.gradle/caches/transforms-3/dccab7e9571e08e747f276853a482196/transformed/jetified-firebase-firestore-24.10.1/AndroidManifest.xml:22:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-firestore:24.10.1] /home/vvasq/.gradle/caches/transforms-3/dccab7e9571e08e747f276853a482196/transformed/jetified-firebase-firestore-24.10.1/AndroidManifest.xml:21:17-111
+meta-data#com.google.firebase.components:com.google.firebase.storage.FirebaseStorageKtxRegistrar
+ADDED from [com.google.firebase:firebase-storage:20.3.0] /home/vvasq/.gradle/caches/transforms-3/cc71cbf2132731959004fbe3f1fcb305/transformed/jetified-firebase-storage-20.3.0/AndroidManifest.xml:30:13-32:85
+	android:value
+		ADDED from [com.google.firebase:firebase-storage:20.3.0] /home/vvasq/.gradle/caches/transforms-3/cc71cbf2132731959004fbe3f1fcb305/transformed/jetified-firebase-storage-20.3.0/AndroidManifest.xml:32:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-storage:20.3.0] /home/vvasq/.gradle/caches/transforms-3/cc71cbf2132731959004fbe3f1fcb305/transformed/jetified-firebase-storage-20.3.0/AndroidManifest.xml:31:17-118
+meta-data#com.google.firebase.components:com.google.firebase.storage.StorageRegistrar
+ADDED from [com.google.firebase:firebase-storage:20.3.0] /home/vvasq/.gradle/caches/transforms-3/cc71cbf2132731959004fbe3f1fcb305/transformed/jetified-firebase-storage-20.3.0/AndroidManifest.xml:33:13-35:85
+	android:value
+		ADDED from [com.google.firebase:firebase-storage:20.3.0] /home/vvasq/.gradle/caches/transforms-3/cc71cbf2132731959004fbe3f1fcb305/transformed/jetified-firebase-storage-20.3.0/AndroidManifest.xml:35:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-storage:20.3.0] /home/vvasq/.gradle/caches/transforms-3/cc71cbf2132731959004fbe3f1fcb305/transformed/jetified-firebase-storage-20.3.0/AndroidManifest.xml:34:17-107
+meta-data#com.google.firebase.components:com.google.firebase.appcheck.FirebaseAppCheckKtxRegistrar
+ADDED from [com.google.firebase:firebase-appcheck:17.1.1] /home/vvasq/.gradle/caches/transforms-3/2955b5ec7db2cfca355812748d0c72bb/transformed/jetified-firebase-appcheck-17.1.1/AndroidManifest.xml:25:13-27:85
+	android:value
+		ADDED from [com.google.firebase:firebase-appcheck:17.1.1] /home/vvasq/.gradle/caches/transforms-3/2955b5ec7db2cfca355812748d0c72bb/transformed/jetified-firebase-appcheck-17.1.1/AndroidManifest.xml:27:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-appcheck:17.1.1] /home/vvasq/.gradle/caches/transforms-3/2955b5ec7db2cfca355812748d0c72bb/transformed/jetified-firebase-appcheck-17.1.1/AndroidManifest.xml:26:17-120
+meta-data#com.google.firebase.components:com.google.firebase.appcheck.FirebaseAppCheckRegistrar
+ADDED from [com.google.firebase:firebase-appcheck:17.1.1] /home/vvasq/.gradle/caches/transforms-3/2955b5ec7db2cfca355812748d0c72bb/transformed/jetified-firebase-appcheck-17.1.1/AndroidManifest.xml:28:13-30:85
+	android:value
+		ADDED from [com.google.firebase:firebase-appcheck:17.1.1] /home/vvasq/.gradle/caches/transforms-3/2955b5ec7db2cfca355812748d0c72bb/transformed/jetified-firebase-appcheck-17.1.1/AndroidManifest.xml:30:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-appcheck:17.1.1] /home/vvasq/.gradle/caches/transforms-3/2955b5ec7db2cfca355812748d0c72bb/transformed/jetified-firebase-appcheck-17.1.1/AndroidManifest.xml:29:17-117
 service#com.google.mlkit.common.internal.MlKitComponentDiscoveryService
 ADDED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] /home/vvasq/.gradle/caches/transforms-3/41671d7436aa1e406dd3d95e3fef4573/transformed/jetified-play-services-mlkit-barcode-scanning-18.3.0/AndroidManifest.xml:9:9-15:19
 MERGED from [com.google.mlkit:vision-common:17.3.0] /home/vvasq/.gradle/caches/transforms-3/60a91d9bf1053eaf29d71e935943554c/transformed/jetified-vision-common-17.3.0/AndroidManifest.xml:9:9-15:19

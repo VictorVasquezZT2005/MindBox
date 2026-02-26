@@ -43,4 +43,5 @@ dependencies {
     implementation "androidx.camera:camera-view:${camerax_version}"
     implementation 'com.google.mlkit:barcode-scanning:17.2.0'
     implementation 'com.google.guava:guava:31.1-android'
+    implementation 'com.google.firebase:firebase-storage:20.3.0'
 }

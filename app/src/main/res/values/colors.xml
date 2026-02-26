@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="white">#FFFFFF</color>
     <color name="pitch_black">#121212</color>
     <color name="background_dark">#121212</color>
     <color name="surface_dark">#1C1C1E</color>
-    
     <color name="text_light">#E0E0E0</color>
     <color name="text_muted">#9CA3AF</color>
-    
     <color name="brand_primary">#1E94F6</color>
     <color name="accent_blue">#1E94F6</color>
     <color name="accent_green">#10B981</color>
