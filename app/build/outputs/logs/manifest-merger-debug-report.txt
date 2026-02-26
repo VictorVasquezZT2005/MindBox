@@ -1,20 +1,20 @@
 -- Merging decision tree log ---
 provider#androidx.core.content.FileProvider
-INJECTED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:38:9-46:20
+INJECTED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:38:9-46:20
 	android:grantUriPermissions
-		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:42:13-47
+		ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:42:13-47
 	android:authorities
-		INJECTED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml
-		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:40:13-60
+		INJECTED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml
+		ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:40:13-60
 	android:exported
-		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:41:13-37
+		ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:41:13-37
 	android:name
-		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:39:13-62
+		ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:39:13-62
 manifest
-ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:2:1-50:12
-INJECTED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:2:1-50:12
-INJECTED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:2:1-50:12
-INJECTED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:2:1-50:12
+ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:2:1-50:12
+INJECTED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:2:1-50:12
+INJECTED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:2:1-50:12
+INJECTED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:2:1-50:12
 MERGED from [com.google.android.material:material:1.11.0] /home/vvasq/.gradle/caches/transforms-3/c4516863a6091d4c9ba15b190e296f48/transformed/material-1.11.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /home/vvasq/.gradle/caches/transforms-3/1ea281c3562e25a425f624d9cf8cf3af/transformed/constraintlayout-2.1.4/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.camera:camera-video:1.3.1] /home/vvasq/.gradle/caches/transforms-3/f4f872a43d570460dc0cc04a9bd05134/transformed/jetified-camera-video-1.3.1/AndroidManifest.xml:2:1-7:12
@@ -98,15 +98,15 @@ MERGED from [androidx.annotation:annotation-experimental:1.3.1] /home/vvasq/.gra
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /home/vvasq/.gradle/caches/transforms-3/c14fc690ccd0a1afc23bf961bac33017/transformed/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.android.odml:image:1.0.0-beta1] /home/vvasq/.gradle/caches/transforms-3/25d44480b5bde50bbeebde02ff08c261/transformed/jetified-image-1.0.0-beta1/AndroidManifest.xml:2:1-9:12
 	package
-		INJECTED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml
+		INJECTED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml
+		INJECTED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml
+		INJECTED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:4:5-67
+ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:4:5-67
 MERGED from [com.google.firebase:firebase-auth:22.3.1] /home/vvasq/.gradle/caches/transforms-3/2d922cba6258b46eecc4d0307b29d646/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:25:5-67
 MERGED from [com.google.firebase:firebase-auth:22.3.1] /home/vvasq/.gradle/caches/transforms-3/2d922cba6258b46eecc4d0307b29d646/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:25:5-67
 MERGED from [com.google.firebase:firebase-firestore:24.10.1] /home/vvasq/.gradle/caches/transforms-3/dccab7e9571e08e747f276853a482196/transformed/jetified-firebase-firestore-24.10.1/AndroidManifest.xml:11:5-67
@@ -118,9 +118,9 @@ MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home
 MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] /home/vvasq/.gradle/caches/transforms-3/09809f145d6826f337b3fdb252753ab2/transformed/jetified-recaptcha-18.4.0/AndroidManifest.xml:7:5-67
 MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] /home/vvasq/.gradle/caches/transforms-3/09809f145d6826f337b3fdb252753ab2/transformed/jetified-recaptcha-18.4.0/AndroidManifest.xml:7:5-67
 	android:name
-		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:4:22-64
+		ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:4:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:5:5-79
+ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:5:5-79
 MERGED from [com.google.firebase:firebase-auth:22.3.1] /home/vvasq/.gradle/caches/transforms-3/2d922cba6258b46eecc4d0307b29d646/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:26:5-79
 MERGED from [com.google.firebase:firebase-auth:22.3.1] /home/vvasq/.gradle/caches/transforms-3/2d922cba6258b46eecc4d0307b29d646/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:26:5-79
 MERGED from [com.google.firebase:firebase-firestore:24.10.1] /home/vvasq/.gradle/caches/transforms-3/dccab7e9571e08e747f276853a482196/transformed/jetified-firebase-firestore-24.10.1/AndroidManifest.xml:10:5-79
@@ -136,18 +136,18 @@ MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] /home/vvasq/.gradle/
 MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /home/vvasq/.gradle/caches/transforms-3/0b4f10e39a0930e7bfef1d6517a01c4f/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:22:5-79
 MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /home/vvasq/.gradle/caches/transforms-3/0b4f10e39a0930e7bfef1d6517a01c4f/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:22:5-79
 	android:name
-		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:5:22-76
+		ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:5:22-76
 uses-permission#android.permission.CAMERA
-ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:6:5-65
+ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:6:5-65
 	android:name
-		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:6:22-62
+		ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:6:22-62
 uses-permission#android.permission.REQUEST_INSTALL_PACKAGES
-ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:7:5-83
+ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:7:5-83
 	android:name
-		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:7:22-80
+		ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:7:22-80
 application
-ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:9:5-48:19
-INJECTED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:9:5-48:19
+ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:9:5-48:19
+INJECTED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:9:5-48:19
 MERGED from [com.google.android.material:material:1.11.0] /home/vvasq/.gradle/caches/transforms-3/c4516863a6091d4c9ba15b190e296f48/transformed/material-1.11.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.11.0] /home/vvasq/.gradle/caches/transforms-3/c4516863a6091d4c9ba15b190e296f48/transformed/material-1.11.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /home/vvasq/.gradle/caches/transforms-3/1ea281c3562e25a425f624d9cf8cf3af/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
@@ -205,113 +205,113 @@ MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /home/vva
 MERGED from [com.google.android.odml:image:1.0.0-beta1] /home/vvasq/.gradle/caches/transforms-3/25d44480b5bde50bbeebde02ff08c261/transformed/jetified-image-1.0.0-beta1/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.odml:image:1.0.0-beta1] /home/vvasq/.gradle/caches/transforms-3/25d44480b5bde50bbeebde02ff08c261/transformed/jetified-image-1.0.0-beta1/AndroidManifest.xml:7:5-20
 	android:extractNativeLibs
-		INJECTED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml
+		INJECTED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.9.0] /home/vvasq/.gradle/caches/transforms-3/df03fe28d217857e465899eabc5396cc/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:14:9-35
+		ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:14:9-35
 	android:label
-		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:13:9-32
+		ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:13:9-32
 	android:roundIcon
-		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:12:9-54
+		ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:12:9-54
 	android:icon
-		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:11:9-43
+		ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:11:9-43
 	android:allowBackup
-		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:10:9-35
+		ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:10:9-35
 	android:theme
-		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:15:9-45
+		ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:15:9-45
 activity#com.mindbox.app.MainActivity
-ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:17:9-24:20
+ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:17:9-24:20
 	android:exported
-		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:19:13-36
+		ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:19:13-36
 	android:name
-		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:18:13-41
+		ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:18:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:20:13-23:29
+ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:20:13-23:29
 action#android.intent.action.MAIN
-ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:21:17-69
+ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:21:17-69
 	android:name
-		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:21:25-66
+		ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:21:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:22:17-77
+ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:22:17-77
 	android:name
-		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:22:27-74
+		ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:22:27-74
 activity#com.mindbox.app.RegisterActivity
-ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:26:9-79
+ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:26:9-79
 	android:exported
-		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:26:52-76
+		ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:26:52-76
 	android:name
-		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:26:19-51
+		ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:26:19-51
 activity#com.mindbox.app.ForgotPasswordActivity
-ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:27:9-85
+ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:27:9-85
 	android:exported
-		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:27:58-82
+		ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:27:58-82
 	android:name
-		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:27:19-57
+		ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:27:19-57
 activity#com.mindbox.app.DashboardActivity
-ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:28:9-80
+ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:28:9-80
 	android:exported
-		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:28:53-77
+		ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:28:53-77
 	android:name
-		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:28:19-52
+		ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:28:19-52
 activity#com.mindbox.app.ProfileActivity
-ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:29:9-78
+ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:29:9-78
 	android:exported
-		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:29:51-75
+		ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:29:51-75
 	android:name
-		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:29:19-50
+		ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:29:19-50
 activity#com.mindbox.app.EditProfileActivity
-ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:30:9-82
+ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:30:9-82
 	android:exported
-		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:30:55-79
+		ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:30:55-79
 	android:name
-		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:30:19-54
+		ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:30:19-54
 activity#com.mindbox.app.StatsActivity
-ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:31:9-76
+ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:31:9-76
 	android:exported
-		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:31:49-73
+		ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:31:49-73
 	android:name
-		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:31:19-48
+		ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:31:19-48
 activity#com.mindbox.app.ResumeActivity
-ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:32:9-77
+ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:32:9-77
 	android:exported
-		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:32:50-74
+		ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:32:50-74
 	android:name
-		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:32:19-49
+		ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:32:19-49
 activity#com.mindbox.app.AddPasswordActivity
-ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:33:9-82
+ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:33:9-82
 	android:exported
-		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:33:55-79
+		ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:33:55-79
 	android:name
-		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:33:19-54
+		ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:33:19-54
 activity#com.mindbox.app.CertificatesActivity
-ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:34:9-83
+ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:34:9-83
 	android:exported
-		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:34:56-80
+		ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:34:56-80
 	android:name
-		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:34:19-55
+		ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:34:19-55
 activity#com.mindbox.app.AddCertificateActivity
-ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:35:9-85
+ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:35:9-85
 	android:exported
-		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:35:58-82
+		ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:35:58-82
 	android:name
-		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:35:19-57
+		ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:35:19-57
 activity#com.mindbox.app.CertificateDetailActivity
-ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:36:9-88
+ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:36:9-88
 	android:exported
-		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:36:61-85
+		ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:36:61-85
 	android:name
-		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:36:19-60
+		ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:36:19-60
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:43:13-45:54
+ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:43:13-45:54
 	android:resource
-		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:45:17-51
+		ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:45:17-51
 	android:name
-		ADDED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml:44:17-67
+		ADDED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml:44:17-67
 uses-sdk
-INJECTED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml
-INJECTED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml
+INJECTED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml
+INJECTED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml
 MERGED from [com.google.android.material:material:1.11.0] /home/vvasq/.gradle/caches/transforms-3/c4516863a6091d4c9ba15b190e296f48/transformed/material-1.11.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.11.0] /home/vvasq/.gradle/caches/transforms-3/c4516863a6091d4c9ba15b190e296f48/transformed/material-1.11.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /home/vvasq/.gradle/caches/transforms-3/1ea281c3562e25a425f624d9cf8cf3af/transformed/constraintlayout-2.1.4/AndroidManifest.xml:5:5-7:41
@@ -479,9 +479,9 @@ MERGED from [com.google.android.odml:image:1.0.0-beta1] /home/vvasq/.gradle/cach
 	tools:overrideLibrary
 		ADDED from [com.google.firebase:firebase-auth:22.3.1] /home/vvasq/.gradle/caches/transforms-3/2d922cba6258b46eecc4d0307b29d646/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:23:9-61
 	android:targetSdkVersion
-		INJECTED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml
+		INJECTED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/src/main/AndroidManifest.xml
+		INJECTED from /run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/src/main/AndroidManifest.xml
 service#androidx.camera.core.impl.MetadataHolderService
 ADDED from [androidx.camera:camera-camera2:1.3.1] /home/vvasq/.gradle/caches/transforms-3/5e0e8d8c2a6f08670dbf99cbdba29f09/transformed/jetified-camera-camera2-1.3.1/AndroidManifest.xml:24:9-33:19
 MERGED from [androidx.camera:camera-core:1.3.1] /home/vvasq/.gradle/caches/transforms-3/185a9ab83dd31268d36adfa8f0f89d46/transformed/jetified-camera-core-1.3.1/AndroidManifest.xml:29:9-33:78

@@ -1,14 +1,14 @@
-#Mon Feb 23 15:13:48 CST 2026
+#Wed Feb 25 21:26:01 CST 2026
 path.4=classes3.dex
 path.3=classes2.dex
 path.2=15/classes.dex
 path.1=0/classes.dex
 path.0=classes.dex
-base.4=/media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/build/intermediates/dex/debug/mergeExtDexDebug/classes3.dex
-base.3=/media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
-base.2=/media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/build/intermediates/dex/debug/mergeProjectDexDebug/15/classes.dex
-base.1=/media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
-base.0=/media/vvasq/32GB/Proyectos/Android/Java/MindBox/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
+base.4=/run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/build/intermediates/dex/debug/mergeExtDexDebug/classes3.dex
+base.3=/run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
+base.2=/run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/build/intermediates/dex/debug/mergeProjectDexDebug/15/classes.dex
+base.1=/run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
+base.0=/run/media/vvasq/1TB/Projects/Android/Java/MindBox/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
 renamed.3=classes4.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
