@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.mindbox.app-mergeDebugResources-40:/values-lv/values-lv.xml",
+            "outputFile": "com.mindbox.app-mergeDebugResources-46:/values-lv/values-lv.xml",
             "map": [
                 {
                     "source": "/home/vvasq/.gradle/caches/transforms-3/df03fe28d217857e465899eabc5396cc/transformed/core-1.9.0/res/values-lv/values-lv.xml",

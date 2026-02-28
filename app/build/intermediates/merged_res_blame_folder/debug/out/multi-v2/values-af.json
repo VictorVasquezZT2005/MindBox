@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.mindbox.app-mergeDebugResources-40:/values-af/values-af.xml",
+            "outputFile": "com.mindbox.app-mergeDebugResources-46:/values-af/values-af.xml",
             "map": [
                 {
                     "source": "/home/vvasq/.gradle/caches/transforms-3/b8ac02d24058480a7527e4d022255db6/transformed/browser-1.4.0/res/values-af/values-af.xml",

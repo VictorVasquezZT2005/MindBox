@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.mindbox.app-mergeDebugResources-40:/values-az/values-az.xml",
+            "outputFile": "com.mindbox.app-mergeDebugResources-46:/values-az/values-az.xml",
             "map": [
                 {
                     "source": "/home/vvasq/.gradle/caches/transforms-3/1f30b9addc17119fce581fe65a8c57fb/transformed/jetified-play-services-basement-18.1.0/res/values-az/values.xml",

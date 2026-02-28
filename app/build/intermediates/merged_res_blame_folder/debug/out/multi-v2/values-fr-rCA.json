@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.mindbox.app-mergeDebugResources-40:/values-fr-rCA/values-fr-rCA.xml",
+            "outputFile": "com.mindbox.app-mergeDebugResources-46:/values-fr-rCA/values-fr-rCA.xml",
             "map": [
                 {
                     "source": "/home/vvasq/.gradle/caches/transforms-3/d1874ddb2fd4f75328b3dd679af5d403/transformed/jetified-play-services-base-18.1.0/res/values-fr-rCA/values.xml",

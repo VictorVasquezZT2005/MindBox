@@ -6,6 +6,9 @@
     <color name="accent_purple">#8B5CF6</color>
     <color name="background_dark">#121212</color>
     <color name="brand_primary">#1E94F6</color>
+    <color name="mindbox_bg">#221610</color>
+    <color name="mindbox_primary">#ec5b13</color>
+    <color name="mindbox_surface">#2D1E16</color>
     <color name="pitch_black">#121212</color>
     <color name="surface_dark">#1C1C1E</color>
     <color name="text_light">#E0E0E0</color>
@@ -26,7 +29,8 @@
     </style>
     <style name="AlertDialogCustom" parent="Theme.AppCompat.Light.Dialog.Alert">
         <item name="android:background">@color/surface_dark</item>
-        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:textColorPrimary">
+#FFFFFF</item>
         <item name="android:textColorSecondary">@color/text_muted</item>
         <item name="colorAccent">@color/brand_primary</item>
     </style>
@@ -67,7 +71,20 @@
         <item name="colorPrimaryDark">#000000</item>
         <item name="colorAccent">@color/brand_primary</item>
         <item name="android:windowBackground">@color/pitch_black</item>
-        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:textColorPrimary">
+#FFFFFF</item>
         <item name="alertDialogTheme">@style/AlertDialogCustom</item>
+    </style>
+    <style name="Theme.MindBox.DocumentScanner" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/mindbox_primary</item>
+        <item name="colorPrimaryDark">
+#000000</item>
+        <item name="colorAccent">@color/mindbox_primary</item>
+        <item name="android:windowBackground">@color/mindbox_bg</item>
+        <item name="android:textColorPrimary">
+#FFFFFF</item>
+        <item name="colorSurface">@color/mindbox_surface</item>
+        <item name="colorOnSurface">
+#FFFFFF</item>
     </style>
 </resources>

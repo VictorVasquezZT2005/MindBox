@@ -1,254 +1,278 @@
 [
     {
-        "merged": "com.mindbox.app-merged_res-42:/drawable_spa_24.xml.flat",
-        "source": "com.mindbox.app-main-44:/drawable/spa_24.xml"
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/drawable_mail_24.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/drawable/mail_24.xml"
     },
     {
-        "merged": "com.mindbox.app-merged_res-42:/xml_file_paths.xml.flat",
-        "source": "com.mindbox.app-main-44:/xml/file_paths.xml"
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/drawable_button_white_rounded.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/drawable/button_white_rounded.xml"
     },
     {
-        "merged": "com.mindbox.app-merged_res-42:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "com.mindbox.app-main-44:/drawable/ic_launcher_foreground.xml"
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/layout_activity_add_certificate.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/layout/activity_add_certificate.xml"
     },
     {
-        "merged": "com.mindbox.app-merged_res-42:/drawable_settings_backup_restore_24.xml.flat",
-        "source": "com.mindbox.app-main-44:/drawable/settings_backup_restore_24.xml"
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/xml_file_paths.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/xml/file_paths.xml"
     },
     {
-        "merged": "com.mindbox.app-merged_res-42:/drawable_check_24.xml.flat",
-        "source": "com.mindbox.app-main-44:/drawable/check_24.xml"
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/drawable_bg_circle.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/drawable/bg_circle.xml"
     },
     {
-        "merged": "com.mindbox.app-merged_res-42:/drawable_document_scanner_24.xml.flat",
-        "source": "com.mindbox.app-main-44:/drawable/document_scanner_24.xml"
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/drawable_edit_text_outline.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/drawable/edit_text_outline.xml"
     },
     {
-        "merged": "com.mindbox.app-merged_res-42:/drawable_delete_24.xml.flat",
-        "source": "com.mindbox.app-main-44:/drawable/delete_24.xml"
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/drawable_open_in_new_24.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/drawable/open_in_new_24.xml"
     },
     {
-        "merged": "com.mindbox.app-merged_res-42:/drawable_open_in_new_24.xml.flat",
-        "source": "com.mindbox.app-main-44:/drawable/open_in_new_24.xml"
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/drawable_visibility_24.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/drawable/visibility_24.xml"
     },
     {
-        "merged": "com.mindbox.app-merged_res-42:/drawable_add_24.xml.flat",
-        "source": "com.mindbox.app-main-44:/drawable/add_24.xml"
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/color_nav_item_color.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/color/nav_item_color.xml"
     },
     {
-        "merged": "com.mindbox.app-merged_res-42:/drawable_ic_launcher.xml.flat",
-        "source": "com.mindbox.app-main-44:/drawable/ic_launcher.xml"
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/layout_item_stat_row.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/layout/item_stat_row.xml"
     },
     {
-        "merged": "com.mindbox.app-merged_res-42:/drawable_docs_24.xml.flat",
-        "source": "com.mindbox.app-main-44:/drawable/docs_24.xml"
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/drawable_calendar_today_24.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/drawable/calendar_today_24.xml"
     },
     {
-        "merged": "com.mindbox.app-merged_res-42:/layout_activity_certificate_detail.xml.flat",
-        "source": "com.mindbox.app-main-44:/layout/activity_certificate_detail.xml"
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/drawable_bg_rounded_icon.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/drawable/bg_rounded_icon.xml"
     },
     {
-        "merged": "com.mindbox.app-merged_res-42:/layout_activity_dashboard.xml.flat",
-        "source": "com.mindbox.app-main-44:/layout/activity_dashboard.xml"
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/layout_item_password.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/layout/item_password.xml"
     },
     {
-        "merged": "com.mindbox.app-merged_res-42:/layout_activity_add_certificate.xml.flat",
-        "source": "com.mindbox.app-main-44:/layout/activity_add_certificate.xml"
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/drawable_school_24.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/drawable/school_24.xml"
     },
     {
-        "merged": "com.mindbox.app-merged_res-42:/drawable_edit_24.xml.flat",
-        "source": "com.mindbox.app-main-44:/drawable/edit_24.xml"
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/drawable_picture_as_pdf_24.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/drawable/picture_as_pdf_24.xml"
     },
     {
-        "merged": "com.mindbox.app-merged_res-42:/layout_item_certificate.xml.flat",
-        "source": "com.mindbox.app-main-44:/layout/item_certificate.xml"
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/layout_activity_certificates.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/layout/activity_certificates.xml"
     },
     {
-        "merged": "com.mindbox.app-merged_res-42:/drawable_reminder_24.xml.flat",
-        "source": "com.mindbox.app-main-44:/drawable/reminder_24.xml"
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/layout_activity_edit_profile.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/layout/activity_edit_profile.xml"
     },
     {
-        "merged": "com.mindbox.app-merged_res-42:/drawable_lock_24.xml.flat",
-        "source": "com.mindbox.app-main-44:/drawable/lock_24.xml"
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/drawable_check_24.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/drawable/check_24.xml"
     },
     {
-        "merged": "com.mindbox.app-merged_res-42:/layout_activity_add_password.xml.flat",
-        "source": "com.mindbox.app-main-44:/layout/activity_add_password.xml"
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/drawable_notes_24.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/drawable/notes_24.xml"
     },
     {
-        "merged": "com.mindbox.app-merged_res-42:/layout_fragment_home.xml.flat",
-        "source": "com.mindbox.app-main-44:/layout/fragment_home.xml"
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/drawable_person_24.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/drawable/person_24.xml"
     },
     {
-        "merged": "com.mindbox.app-merged_res-42:/drawable_button_white_rounded.xml.flat",
-        "source": "com.mindbox.app-main-44:/drawable/button_white_rounded.xml"
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/drawable_delete_24.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/drawable/delete_24.xml"
     },
     {
-        "merged": "com.mindbox.app-merged_res-42:/drawable_bg_rounded_icon.xml.flat",
-        "source": "com.mindbox.app-main-44:/drawable/bg_rounded_icon.xml"
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/drawable_ic_launcher_background.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "com.mindbox.app-merged_res-42:/layout_fragment_passwords.xml.flat",
-        "source": "com.mindbox.app-main-44:/layout/fragment_passwords.xml"
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/layout_activity_custom_crop.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/layout/activity_custom_crop.xml"
     },
     {
-        "merged": "com.mindbox.app-merged_res-42:/layout_activity_profile.xml.flat",
-        "source": "com.mindbox.app-main-44:/layout/activity_profile.xml"
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/drawable_button_register_dark.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/drawable/button_register_dark.xml"
     },
     {
-        "merged": "com.mindbox.app-merged_res-42:/drawable_verified_user_24.xml.flat",
-        "source": "com.mindbox.app-main-44:/drawable/verified_user_24.xml"
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/drawable_settings_backup_restore_24.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/drawable/settings_backup_restore_24.xml"
     },
     {
-        "merged": "com.mindbox.app-merged_res-42:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.mindbox.app-main-44:/drawable/ic_launcher_background.xml"
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/drawable_docs_24.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/drawable/docs_24.xml"
     },
     {
-        "merged": "com.mindbox.app-merged_res-42:/color_nav_item_color.xml.flat",
-        "source": "com.mindbox.app-main-44:/color/nav_item_color.xml"
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/drawable_spa_24.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/drawable/spa_24.xml"
     },
     {
-        "merged": "com.mindbox.app-merged_res-42:/drawable_account_circle_24.xml.flat",
-        "source": "com.mindbox.app-main-44:/drawable/account_circle_24.xml"
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/drawable_account_circle_24.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/drawable/account_circle_24.xml"
     },
     {
-        "merged": "com.mindbox.app-merged_res-42:/drawable_bg_icon_aura.xml.flat",
-        "source": "com.mindbox.app-main-44:/drawable/bg_icon_aura.xml"
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "com.mindbox.app-merged_res-42:/drawable_chevron_right_24.xml.flat",
-        "source": "com.mindbox.app-main-44:/drawable/chevron_right_24.xml"
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/drawable_border_dashed.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/drawable/border_dashed.xml"
     },
     {
-        "merged": "com.mindbox.app-merged_res-42:/drawable_school_24.xml.flat",
-        "source": "com.mindbox.app-main-44:/drawable/school_24.xml"
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/menu_bottom_nav_menu.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/menu/bottom_nav_menu.xml"
     },
     {
-        "merged": "com.mindbox.app-merged_res-42:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.mindbox.app-main-44:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/drawable_ic_book.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/drawable/ic_book.xml"
     },
     {
-        "merged": "com.mindbox.app-merged_res-42:/drawable_home_24.xml.flat",
-        "source": "com.mindbox.app-main-44:/drawable/home_24.xml"
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/layout_activity_register.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/layout/activity_register.xml"
     },
     {
-        "merged": "com.mindbox.app-merged_res-42:/layout_activity_login.xml.flat",
-        "source": "com.mindbox.app-main-44:/layout/activity_login.xml"
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/drawable_lock_24.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/drawable/lock_24.xml"
     },
     {
-        "merged": "com.mindbox.app-merged_res-42:/drawable_encrypted_24.xml.flat",
-        "source": "com.mindbox.app-main-44:/drawable/encrypted_24.xml"
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "com.mindbox.app-merged_res-42:/drawable_picture_as_pdf_24.xml.flat",
-        "source": "com.mindbox.app-main-44:/drawable/picture_as_pdf_24.xml"
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/layout_item_certificate.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/layout/item_certificate.xml"
     },
     {
-        "merged": "com.mindbox.app-merged_res-42:/drawable_notes_24.xml.flat",
-        "source": "com.mindbox.app-main-44:/drawable/notes_24.xml"
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/drawable_add_photo_alternate_24.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/drawable/add_photo_alternate_24.xml"
     },
     {
-        "merged": "com.mindbox.app-merged_res-42:/drawable_verified_24.xml.flat",
-        "source": "com.mindbox.app-main-44:/drawable/verified_24.xml"
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/drawable_edit_24.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/drawable/edit_24.xml"
     },
     {
-        "merged": "com.mindbox.app-merged_res-42:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.mindbox.app-main-44:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/drawable_leaderboard_24.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/drawable/leaderboard_24.xml"
     },
     {
-        "merged": "com.mindbox.app-merged_res-42:/drawable_calendar_today_24.xml.flat",
-        "source": "com.mindbox.app-main-44:/drawable/calendar_today_24.xml"
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/drawable_document_scanner_24.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/drawable/document_scanner_24.xml"
     },
     {
-        "merged": "com.mindbox.app-merged_res-42:/drawable_leaderboard_24.xml.flat",
-        "source": "com.mindbox.app-main-44:/drawable/leaderboard_24.xml"
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/drawable_rotate_right_24.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/drawable/rotate_right_24.xml"
     },
     {
-        "merged": "com.mindbox.app-merged_res-42:/drawable_content_copy_24.xml.flat",
-        "source": "com.mindbox.app-main-44:/drawable/content_copy_24.xml"
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/drawable_ic_launcher.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/drawable/ic_launcher.xml"
     },
     {
-        "merged": "com.mindbox.app-merged_res-42:/drawable_border_dashed.xml.flat",
-        "source": "com.mindbox.app-main-44:/drawable/border_dashed.xml"
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/drawable_home_24.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/drawable/home_24.xml"
     },
     {
-        "merged": "com.mindbox.app-merged_res-42:/drawable_close_24.xml.flat",
-        "source": "com.mindbox.app-main-44:/drawable/close_24.xml"
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/layout_fragment_home.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/layout/fragment_home.xml"
     },
     {
-        "merged": "com.mindbox.app-merged_res-42:/drawable_edit_text_rounded_full.xml.flat",
-        "source": "com.mindbox.app-main-44:/drawable/edit_text_rounded_full.xml"
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/drawable_close_24.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/drawable/close_24.xml"
     },
     {
-        "merged": "com.mindbox.app-merged_res-42:/drawable_arrow_back_ios_24.xml.flat",
-        "source": "com.mindbox.app-main-44:/drawable/arrow_back_ios_24.xml"
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/drawable_verified_user_24.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/drawable/verified_user_24.xml"
     },
     {
-        "merged": "com.mindbox.app-merged_res-42:/layout_activity_register.xml.flat",
-        "source": "com.mindbox.app-main-44:/layout/activity_register.xml"
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/drawable_pdf_dash_outline.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/drawable/pdf_dash_outline.xml"
     },
     {
-        "merged": "com.mindbox.app-merged_res-42:/layout_activity_forgot_password.xml.flat",
-        "source": "com.mindbox.app-main-44:/layout/activity_forgot_password.xml"
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/layout_activity_stats.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/layout/activity_stats.xml"
     },
     {
-        "merged": "com.mindbox.app-merged_res-42:/layout_activity_stats.xml.flat",
-        "source": "com.mindbox.app-main-44:/layout/activity_stats.xml"
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/layout_activity_forgot_password.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/layout/activity_forgot_password.xml"
     },
     {
-        "merged": "com.mindbox.app-merged_res-42:/drawable_button_register_dark.xml.flat",
-        "source": "com.mindbox.app-main-44:/drawable/button_register_dark.xml"
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/drawable_chevron_right_24.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/drawable/chevron_right_24.xml"
     },
     {
-        "merged": "com.mindbox.app-merged_res-42:/layout_activity_resume.xml.flat",
-        "source": "com.mindbox.app-main-44:/layout/activity_resume.xml"
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/drawable_edit_text_rounded_full.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/drawable/edit_text_rounded_full.xml"
     },
     {
-        "merged": "com.mindbox.app-merged_res-42:/layout_activity_certificates.xml.flat",
-        "source": "com.mindbox.app-main-44:/layout/activity_certificates.xml"
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/layout_activity_certificate_detail.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/layout/activity_certificate_detail.xml"
     },
     {
-        "merged": "com.mindbox.app-merged_res-42:/menu_bottom_nav_menu.xml.flat",
-        "source": "com.mindbox.app-main-44:/menu/bottom_nav_menu.xml"
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/drawable_arrow_back_ios_24.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/drawable/arrow_back_ios_24.xml"
     },
     {
-        "merged": "com.mindbox.app-merged_res-42:/layout_item_stat_row.xml.flat",
-        "source": "com.mindbox.app-main-44:/layout/item_stat_row.xml"
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/drawable_add_24.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/drawable/add_24.xml"
     },
     {
-        "merged": "com.mindbox.app-merged_res-42:/drawable_bg_circle.xml.flat",
-        "source": "com.mindbox.app-main-44:/drawable/bg_circle.xml"
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/layout_activity_document.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/layout/activity_document.xml"
     },
     {
-        "merged": "com.mindbox.app-merged_res-42:/layout_item_password.xml.flat",
-        "source": "com.mindbox.app-main-44:/layout/item_password.xml"
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/drawable_reminder_24.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/drawable/reminder_24.xml"
     },
     {
-        "merged": "com.mindbox.app-merged_res-42:/drawable_visibility_24.xml.flat",
-        "source": "com.mindbox.app-main-44:/drawable/visibility_24.xml"
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/drawable_edit_text_rounded.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/drawable/edit_text_rounded.xml"
     },
     {
-        "merged": "com.mindbox.app-merged_res-42:/drawable_person_24.xml.flat",
-        "source": "com.mindbox.app-main-44:/drawable/person_24.xml"
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/layout_activity_resume.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/layout/activity_resume.xml"
     },
     {
-        "merged": "com.mindbox.app-merged_res-42:/layout_activity_edit_profile.xml.flat",
-        "source": "com.mindbox.app-main-44:/layout/activity_edit_profile.xml"
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/layout_fragment_passwords.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/layout/fragment_passwords.xml"
     },
     {
-        "merged": "com.mindbox.app-merged_res-42:/drawable_mail_24.xml.flat",
-        "source": "com.mindbox.app-main-44:/drawable/mail_24.xml"
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/layout_activity_login.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/layout/activity_login.xml"
     },
     {
-        "merged": "com.mindbox.app-merged_res-42:/drawable_visibility_off_24.xml.flat",
-        "source": "com.mindbox.app-main-44:/drawable/visibility_off_24.xml"
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/layout_activity_add_password.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/layout/activity_add_password.xml"
     },
     {
-        "merged": "com.mindbox.app-merged_res-42:/drawable_ic_book.xml.flat",
-        "source": "com.mindbox.app-main-44:/drawable/ic_book.xml"
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/drawable/ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.mindbox.app-merged_res-42:/drawable_edit_text_rounded.xml.flat",
-        "source": "com.mindbox.app-main-44:/drawable/edit_text_rounded.xml"
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/drawable_bg_icon_aura.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/drawable/bg_icon_aura.xml"
+    },
+    {
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/drawable_encrypted_24.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/drawable/encrypted_24.xml"
+    },
+    {
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/drawable_visibility_off_24.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/drawable/visibility_off_24.xml"
+    },
+    {
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/drawable_content_copy_24.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/drawable/content_copy_24.xml"
+    },
+    {
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/drawable_verified_24.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/drawable/verified_24.xml"
+    },
+    {
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/layout_activity_profile.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/layout/activity_profile.xml"
+    },
+    {
+        "merged": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-merged_res-48:/layout_activity_dashboard.xml.flat",
+        "source": "/home/vvasq/.gradle/daemon/8.4/com.mindbox.app-main-50:/layout/activity_dashboard.xml"
     }
 ]

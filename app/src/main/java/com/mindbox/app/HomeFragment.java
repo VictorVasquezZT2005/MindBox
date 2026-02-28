@@ -20,7 +20,11 @@ public class HomeFragment extends Fragment {
 
     @Nullable
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public View onCreateView(
+        @NonNull LayoutInflater inflater,
+        @Nullable ViewGroup container,
+        @Nullable Bundle savedInstanceState
+    ) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
         mAuth = FirebaseAuth.getInstance();
@@ -29,7 +33,10 @@ public class HomeFragment extends Fragment {
 
         // 1. Cargar nombre desde Firestore
         if (mAuth.getCurrentUser() != null) {
-            db.collection("users").document(mAuth.getUid()).get()
+            db
+                .collection("users")
+                .document(mAuth.getUid())
+                .get()
                 .addOnSuccessListener(doc -> {
                     if (doc.exists() && isAdded()) {
                         tvWelcomeName.setText("Hola, " + doc.getString("name"));
@@ -40,37 +47,55 @@ public class HomeFragment extends Fragment {
         // 2. NAVEGACIÓN HACIA ACTIVIDADES (Flujo independiente)
 
         // Cursos -> CertificatesActivity
-        view.findViewById(R.id.cardCourses).setOnClickListener(v -> {
-            startActivity(new Intent(getActivity(), CertificatesActivity.class));
-        });
+        view
+            .findViewById(R.id.cardCourses)
+            .setOnClickListener(v -> {
+                startActivity(
+                    new Intent(getActivity(), CertificatesActivity.class)
+                );
+            });
 
         // Red -> StatsActivity (CAMBIADO: De Fragment a Activity)
-        view.findViewById(R.id.cardNetwork).setOnClickListener(v -> {
-            startActivity(new Intent(getActivity(), StatsActivity.class));
-        });
+        view
+            .findViewById(R.id.cardNetwork)
+            .setOnClickListener(v -> {
+                startActivity(new Intent(getActivity(), StatsActivity.class));
+            });
 
         // CV -> ResumeActivity
-        view.findViewById(R.id.cardResume).setOnClickListener(v -> {
-            startActivity(new Intent(getActivity(), ResumeActivity.class));
-        });
+        view
+            .findViewById(R.id.cardResume)
+            .setOnClickListener(v -> {
+                startActivity(new Intent(getActivity(), ResumeActivity.class));
+            });
 
         // Perfil Header -> ProfileActivity
-        view.findViewById(R.id.btnProfileHeader).setOnClickListener(v -> {
-            startActivity(new Intent(getActivity(), ProfileActivity.class));
-        });
-
-
-        // 3. NAVEGACIÓN HACIA FRAGMENTOS (Flujo interno del Dashboard)
-
-        // Scanner -> PasswordsFragment (Mantenemos como Fragment si así lo deseas)
-        view.findViewById(R.id.cardScanner).setOnClickListener(v -> navegarAFramento(new PasswordsFragment()));
+        view
+            .findViewById(R.id.btnProfileHeader)
+            .setOnClickListener(v -> {
+                startActivity(new Intent(getActivity(), ProfileActivity.class));
+            });
+        // Scanner -> DocumentActivity (Para el escaneo de ID 150%)
+        view
+            .findViewById(R.id.cardScanner)
+            .setOnClickListener(v -> {
+                if (getActivity() != null) {
+                    Intent intent = new Intent(
+                        getActivity(),
+                        DocumentActivity.class
+                    );
+                    startActivity(intent);
+                }
+            });
 
         return view;
     }
 
     private void navegarAFramento(Fragment fragment) {
         if (getActivity() != null) {
-            getActivity().getSupportFragmentManager().beginTransaction()
+            getActivity()
+                .getSupportFragmentManager()
+                .beginTransaction()
                 .replace(R.id.fragment_container, fragment)
                 .addToBackStack(null)
                 .commit();

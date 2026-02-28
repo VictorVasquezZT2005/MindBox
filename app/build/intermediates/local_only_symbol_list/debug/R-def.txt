@@ -6,6 +6,9 @@ color accent_orange
 color accent_purple
 color background_dark
 color brand_primary
+color mindbox_bg
+color mindbox_primary
+color mindbox_surface
 color nav_item_color
 color pitch_black
 color surface_dark
@@ -14,6 +17,7 @@ color text_muted
 color white
 drawable account_circle_24
 drawable add_24
+drawable add_photo_alternate_24
 drawable arrow_back_ios_24
 drawable bg_circle
 drawable bg_icon_aura
@@ -30,6 +34,7 @@ drawable delete_24
 drawable docs_24
 drawable document_scanner_24
 drawable edit_24
+drawable edit_text_outline
 drawable edit_text_rounded
 drawable edit_text_rounded_full
 drawable encrypted_24
@@ -43,9 +48,11 @@ drawable lock_24
 drawable mail_24
 drawable notes_24
 drawable open_in_new_24
+drawable pdf_dash_outline
 drawable person_24
 drawable picture_as_pdf_24
 drawable reminder_24
+drawable rotate_right_24
 drawable school_24
 drawable settings_backup_restore_24
 drawable spa_24
@@ -63,6 +70,10 @@ id btnCopy
 id btnDelete
 id btnEditCert
 id btnEditProfile
+id btnFilterAll
+id btnFilterCredly
+id btnFilterSlim
+id btnFilterUdemy
 id btnGeneratePdf
 id btnLogin
 id btnLogout
@@ -77,11 +88,14 @@ id btnSaveChanges
 id btnSelectDate
 id btnSelectPdf
 id btnSendEmail
+id cardBack
 id cardCourses
+id cardFront
 id cardNetwork
 id cardResume
 id cardScanner
 id etAccountEmail
+id etCustomPlatform
 id etEmail
 id etFolio
 id etForgotEmail
@@ -99,16 +113,21 @@ id fabAdd
 id fabAddCertificate
 id fragment_container
 id header
+id imgCheckBack
+id imgCheckFront
 id ivBadge
 id ivDetailBadgeIcon
 id ivEditProfilePic
 id ivProfilePic
 id ivShowHide
 id ivStatIcon
+id loadingProgress
 id nav_dashboard
 id nav_notes
 id nav_passwords
 id nav_reminders
+id previewBack
+id previewFront
 id previewView
 id rvCertificates
 id rvPasswords
@@ -122,6 +141,7 @@ id tvDetailFolio
 id tvDetailPlatform
 id tvDetailTitle
 id tvEmailValue
+id tvFolioLabel
 id tvForgot
 id tvOtpCode
 id tvPdfName
@@ -144,6 +164,7 @@ layout activity_add_password
 layout activity_certificate_detail
 layout activity_certificates
 layout activity_dashboard
+layout activity_document
 layout activity_edit_profile
 layout activity_forgot_password
 layout activity_login
@@ -174,4 +195,5 @@ style DashboardCardStyle
 style DashboardIcon
 style IconBackground
 style Theme.MindBox
+style Theme.MindBox.DocumentScanner
 xml file_paths

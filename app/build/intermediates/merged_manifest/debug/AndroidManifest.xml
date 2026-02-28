@@ -11,7 +11,27 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
     <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.GET_CONTENT" />
+
+            <category android:name="android.intent.category.OPENABLE" />
+
+            <data android:mimeType="*/*" />
+        </intent>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+    </queries>
+
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
 
     <permission
@@ -31,6 +51,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MindBox" >
         <activity
+            android:name="com.canhub.cropper.CropImageActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
             android:name="com.mindbox.app.MainActivity"
             android:exported="true" >
             <intent-filter>
@@ -39,6 +63,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.mindbox.app.DocumentActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MindBox.DocumentScanner" />
         <activity
             android:name="com.mindbox.app.RegisterActivity"
             android:exported="false" />
@@ -91,6 +120,16 @@
                 android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
                 android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
         </service>
+
+        <provider
+            android:name="com.canhub.cropper.CropFileProvider"
+            android:authorities="com.mindbox.app.cropper.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/library_file_paths" />
+        </provider>
 
         <activity
             android:name="com.google.firebase.auth.internal.GenericIdpActivity"
