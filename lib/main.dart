@@ -1,24 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:flutter/foundation.dart' show kIsWeb;
 import 'routing/app_router.dart';
 import 'providers/theme_provider.dart';
+import 'firebase_options.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   
   await Firebase.initializeApp(
-    options: kIsWeb
-        ? const FirebaseOptions(
-            apiKey: "AIzaSyA80eZEAboM-fp-BGpl5OUDyb_m3e2il6E",
-            authDomain: "mindbox-b839e.firebaseapp.com",
-            projectId: "mindbox-b839e",
-            storageBucket: "mindbox-b839e.firebasestorage.app",
-            messagingSenderId: "1034699988850",
-            appId: "1:1034699988850:web:4d5837d9db1ca75cda47eb",
-          )
-        : null,
+    options: DefaultFirebaseOptions.currentPlatform,
   );
   
   runApp(const ProviderScope(child: MindBoxApp()));
