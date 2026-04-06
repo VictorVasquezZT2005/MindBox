@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../providers/service_providers.dart';
+import '../../providers/gemini_provider.dart';
 
 class MarkdownToolbar extends ConsumerWidget {
   final TextEditingController controller;
@@ -12,65 +13,94 @@ class MarkdownToolbar extends ConsumerWidget {
     final selection = controller.selection;
 
     if (selection.baseOffset == -1) {
-      // Si no hay selección, añadir al final
       controller.text = '$text$prefix$suffix';
       controller.selection = TextSelection.collapsed(offset: controller.text.length - suffix.length);
     } else {
-      // Si hay texto seleccionado, rodearlo. Si no, insertar en el cursor.
       final start = selection.start;
       final end = selection.end;
-      
       final selectedText = text.substring(start, end);
       final newText = text.replaceRange(start, end, '$prefix$selectedText$suffix');
-      
       controller.text = newText;
       controller.selection = TextSelection.collapsed(offset: start + prefix.length + selectedText.length);
     }
   }
 
   Future<void> _handleAIAction(BuildContext context, WidgetRef ref, String action) async {
-    final text = controller.text;
-    if (text.trim().isEmpty) {
+    final apiKey = ref.read(geminiKeyProvider);
+    if (apiKey.trim().isEmpty) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Escribe algo primero para usar la IA.')),
+        const SnackBar(content: Text('Configura tu Gemini API Key en el Perfil.')),
       );
       return;
     }
 
-    showDialog(
-      context: context,
-      barrierDismissible: false,
-      builder: (context) => const Center(child: CircularProgressIndicator()),
+    final text = controller.text;
+    if (text.trim().isEmpty) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Escribe algo primero.')),
+      );
+      return;
+    }
+
+    // Indicador sutil de que la IA está trabajando
+    ScaffoldMessenger.of(context).showSnackBar(
+      const SnackBar(
+        content: Row(
+          children: [
+            SizedBox(
+              width: 16,
+              height: 16,
+              child: CircularProgressIndicator(strokeWidth: 2, color: Colors.white),
+            ),
+            SizedBox(width: 16),
+            Text('IA TRABAJANDO... ESPERA UN MOMENTO'),
+          ],
+        ),
+        duration: Duration(seconds: 2),
+      ),
     );
 
+    String result = '';
     try {
       final aiService = ref.read(aiServiceProvider);
-      String result = '';
+      print('DEBUG UI: Iniciando acción IA: $action (Sin bloqueo de pantalla)');
       
       if (action == 'summarize') {
         result = await aiService.summarize(text);
-        if (result.isNotEmpty) _insertMarkdown('\n\n### Resumen IA\n', suffix: result);
       } else if (action == 'grammar') {
         result = await aiService.fixGrammar(text);
-        if (result.isNotEmpty) {
-          controller.text = result;
-          controller.selection = TextSelection.collapsed(offset: controller.text.length);
-        }
       } else if (action == 'continue') {
         result = await aiService.continueWriting(text);
-        if (result.isNotEmpty) _insertMarkdown('\n\n', suffix: result);
       } else if (action.startsWith('custom:')) {
         final prompt = action.replaceFirst('custom:', '');
         result = await aiService.customPrompt(text, prompt);
-        if (result.isNotEmpty) _insertMarkdown('\n\n---\n', suffix: result);
       }
       
-      if (context.mounted) Navigator.pop(context); // Close loading
+      if (result.isNotEmpty) {
+        if (action == 'grammar') {
+          controller.text = result;
+          controller.selection = TextSelection.collapsed(offset: controller.text.length);
+        } else if (action == 'summarize') {
+          _insertMarkdown('\n\n### Resumen IA\n', suffix: result);
+        } else if (action == 'continue') {
+          _insertMarkdown('\n\n', suffix: result);
+        } else if (action.startsWith('custom:')) {
+          _insertMarkdown('\n\n---\n', suffix: result);
+        }
+        print('DEBUG UI: Texto insertado con éxito');
+        
+        if (context.mounted) {
+          ScaffoldMessenger.of(context).clearSnackBars();
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(content: Text('IA: PROCESO COMPLETADO'), duration: Duration(seconds: 1)),
+          );
+        }
+      }
     } catch (e) {
+      print('DEBUG UI ERROR: $e');
       if (context.mounted) {
-        Navigator.pop(context); // Close loading
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Error de IA: $e')),
+          SnackBar(content: Text('Error de IA: $e'), backgroundColor: Colors.red),
         );
       }
     }
@@ -94,18 +124,15 @@ class MarkdownToolbar extends ConsumerWidget {
                 ),
                 ListTile(
                   leading: const Icon(Icons.psychology, color: Colors.purple),
-                  title: const Text('Instrucción personalizada', style: TextStyle(fontWeight: FontWeight.bold)),
-                  subtitle: const Text('Escribe lo que quieres que haga la IA.', style: TextStyle(fontSize: 12)),
+                  title: const Text('Instrucción personalizada'),
                   onTap: () {
                     Navigator.pop(context);
                     _showCustomPromptDialog(context, ref);
                   },
                 ),
-                const Divider(height: 1),
                 ListTile(
                   leading: const Icon(Icons.short_text),
-                  title: const Text('Resumir nota', style: TextStyle(fontWeight: FontWeight.bold)),
-                  subtitle: const Text('Genera un resumen en viñetas.', style: TextStyle(fontSize: 12)),
+                  title: const Text('Resumir nota'),
                   onTap: () {
                     Navigator.pop(context);
                     _handleAIAction(context, ref, 'summarize');
@@ -113,8 +140,7 @@ class MarkdownToolbar extends ConsumerWidget {
                 ),
                 ListTile(
                   leading: const Icon(Icons.spellcheck),
-                  title: const Text('Corregir ortografía', style: TextStyle(fontWeight: FontWeight.bold)),
-                  subtitle: const Text('Mejora la redacción del texto actual.', style: TextStyle(fontSize: 12)),
+                  title: const Text('Corregir ortografía'),
                   onTap: () {
                     Navigator.pop(context);
                     _handleAIAction(context, ref, 'grammar');
@@ -122,8 +148,7 @@ class MarkdownToolbar extends ConsumerWidget {
                 ),
                 ListTile(
                   leading: const Icon(Icons.edit_note),
-                  title: const Text('Continuar escribiendo', style: TextStyle(fontWeight: FontWeight.bold)),
-                  subtitle: const Text('Deja que la IA expanda tu idea.', style: TextStyle(fontSize: 12)),
+                  title: const Text('Continuar escribiendo'),
                   onTap: () {
                     Navigator.pop(context);
                     _handleAIAction(context, ref, 'continue');
@@ -142,21 +167,15 @@ class MarkdownToolbar extends ConsumerWidget {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
-        title: const Text('¿QUÉ QUIERES QUE HAGA?', style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold)),
+        title: const Text('¿QUÉ QUIERES QUE HAGA?'),
         content: TextField(
           controller: promptController,
           autofocus: true,
-          decoration: const InputDecoration(
-            hintText: 'Ej: Traduce al inglés, extrae los nombres...',
-          ),
+          decoration: const InputDecoration(hintText: 'Ej: Traduce al inglés...'),
           maxLines: 3,
         ),
         actions: [
-          TextButton(
-            onPressed: () => Navigator.pop(context),
-            child: const Text('CANCELAR', style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold)),
-          ),
+          TextButton(onPressed: () => Navigator.pop(context), child: const Text('CANCELAR')),
           TextButton(
             onPressed: () {
               final prompt = promptController.text.trim();
@@ -165,7 +184,7 @@ class MarkdownToolbar extends ConsumerWidget {
                 _handleAIAction(context, ref, 'custom:$prompt');
               }
             },
-            child: const Text('EJECUTAR', style: TextStyle(fontWeight: FontWeight.bold)),
+            child: const Text('EJECUTAR'),
           ),
         ],
       ),
@@ -187,58 +206,19 @@ class MarkdownToolbar extends ConsumerWidget {
           IconButton(
             icon: const Icon(Icons.auto_awesome, color: Colors.purple),
             onPressed: () => _showAIOptions(context, ref),
-            tooltip: 'Asistente IA',
-            splashRadius: 20,
           ),
           const VerticalDivider(width: 16, indent: 8, endIndent: 8),
-          _ToolbarButton(
-            icon: Icons.format_bold,
-            tooltip: 'Negrita',
-            onPressed: () => _insertMarkdown('**', suffix: '**'),
-          ),
-          _ToolbarButton(
-            icon: Icons.format_italic,
-            tooltip: 'Cursiva',
-            onPressed: () => _insertMarkdown('_', suffix: '_'),
-          ),
+          _ToolbarButton(icon: Icons.format_bold, tooltip: 'Negrita', onPressed: () => _insertMarkdown('**', suffix: '**')),
+          _ToolbarButton(icon: Icons.format_italic, tooltip: 'Cursiva', onPressed: () => _insertMarkdown('_', suffix: '_')),
           const VerticalDivider(width: 16, indent: 8, endIndent: 8),
-          _ToolbarButton(
-            icon: Icons.title,
-            tooltip: 'Título 1',
-            onPressed: () => _insertMarkdown('\n# '),
-          ),
-          _ToolbarButton(
-            icon: Icons.format_size,
-            tooltip: 'Título 2',
-            onPressed: () => _insertMarkdown('\n## '),
-          ),
+          _ToolbarButton(icon: Icons.title, tooltip: 'Título 1', onPressed: () => _insertMarkdown('\n# ')),
+          _ToolbarButton(icon: Icons.format_size, tooltip: 'Título 2', onPressed: () => _insertMarkdown('\n## ')),
           const VerticalDivider(width: 16, indent: 8, endIndent: 8),
-          _ToolbarButton(
-            icon: Icons.format_list_bulleted,
-            tooltip: 'Lista',
-            onPressed: () => _insertMarkdown('\n- '),
-          ),
-          _ToolbarButton(
-            icon: Icons.format_list_numbered,
-            tooltip: 'Lista Numerada',
-            onPressed: () => _insertMarkdown('\n1. '),
-          ),
-          _ToolbarButton(
-            icon: Icons.check_box_outlined,
-            tooltip: 'Tarea',
-            onPressed: () => _insertMarkdown('\n- [ ] '),
-          ),
+          _ToolbarButton(icon: Icons.format_list_bulleted, tooltip: 'Lista', onPressed: () => _insertMarkdown('\n- ')),
+          _ToolbarButton(icon: Icons.format_list_numbered, tooltip: 'Lista Numerada', onPressed: () => _insertMarkdown('\n1. ')),
           const VerticalDivider(width: 16, indent: 8, endIndent: 8),
-          _ToolbarButton(
-            icon: Icons.code,
-            tooltip: 'Código',
-            onPressed: () => _insertMarkdown('\n```\n', suffix: '\n```\n'),
-          ),
-          _ToolbarButton(
-            icon: Icons.format_quote,
-            tooltip: 'Cita',
-            onPressed: () => _insertMarkdown('\n> '),
-          ),
+          _ToolbarButton(icon: Icons.code, tooltip: 'Código', onPressed: () => _insertMarkdown('\n```\n', suffix: '\n```\n')),
+          _ToolbarButton(icon: Icons.format_quote, tooltip: 'Cita', onPressed: () => _insertMarkdown('\n> ')),
         ],
       ),
     );
@@ -249,7 +229,6 @@ class _ToolbarButton extends StatelessWidget {
   final IconData icon;
   final VoidCallback onPressed;
   final String tooltip;
-
   const _ToolbarButton({required this.icon, required this.onPressed, required this.tooltip});
 
   @override
@@ -259,7 +238,6 @@ class _ToolbarButton extends StatelessWidget {
       onPressed: onPressed,
       tooltip: tooltip,
       color: Theme.of(context).colorScheme.onSurface.withOpacity(0.7),
-      splashRadius: 20,
     );
   }
 }

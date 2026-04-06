@@ -56,8 +56,13 @@ class _NewNoteScreenState extends ConsumerState<NewNoteScreen> {
                   timestamp: DateTime.now().millisecondsSinceEpoch,
                 );
                 
-                await ref.read(firebaseServiceProvider).addNote(user.uid, note);
-                if (mounted) context.pop();
+                final noteId = await ref.read(firebaseServiceProvider).addNote(user.uid, note);
+                if (mounted) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(content: Text('Nota guardada')),
+                  );
+                  context.pushReplacement('/note_detail/$noteId');
+                }
               }
             },
           ),

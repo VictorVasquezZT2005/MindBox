@@ -88,7 +88,12 @@ class _NoteDetailScreenState extends ConsumerState<NoteDetailScreen> {
                     );
                     
                     await ref.read(firebaseServiceProvider).updateNote(user.uid, note.id, updatedNote);
-                    if (mounted) context.pop();
+                    if (mounted) {
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        const SnackBar(content: Text('Nota actualizada')),
+                      );
+                      setState(() => _isPreview = true);
+                    }
                   }
                 },
               ),

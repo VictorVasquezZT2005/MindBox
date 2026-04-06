@@ -30,6 +30,19 @@ class FirebaseService {
     await _auth.sendPasswordResetEmail(email: email);
   }
 
+  // Profile Updates
+  Future<void> updateDisplayName(String name) async {
+    await _auth.currentUser?.updateDisplayName(name);
+  }
+
+  Future<void> updateEmail(String email) async {
+    await _auth.currentUser?.verifyBeforeUpdateEmail(email);
+  }
+
+  Future<void> updatePassword(String password) async {
+    await _auth.currentUser?.updatePassword(password);
+  }
+
   // Firestore Collections
   CollectionReference<Map<String, dynamic>> _userRef(String userId) => 
     _db.collection('users').doc(userId).collection('data'); // Placeholder or specific structure
@@ -42,8 +55,9 @@ class FirebaseService {
       .map((snapshot) => snapshot.docs.map((doc) => Note.fromJson({'id': doc.id, ...doc.data()})).toList());
   }
 
-  Future<void> addNote(String userId, Note note) async {
-    await _db.collection('users').doc(userId).collection('notes').add(note.toJson());
+  Future<String> addNote(String userId, Note note) async {
+    final docRef = await _db.collection('users').doc(userId).collection('notes').add(note.toJson());
+    return docRef.id;
   }
 
   Future<void> updateNote(String userId, String noteId, Note note) async {
@@ -76,8 +90,9 @@ class FirebaseService {
       .map((snapshot) => snapshot.docs.map((doc) => Reminder.fromJson({'id': doc.id, ...doc.data()})).toList());
   }
 
-  Future<void> addReminder(String userId, Reminder reminder) async {
-    await _db.collection('users').doc(userId).collection('reminders').add(reminder.toJson());
+  Future<String> addReminder(String userId, Reminder reminder) async {
+    final docRef = await _db.collection('users').doc(userId).collection('reminders').add(reminder.toJson());
+    return docRef.id;
   }
 
   Future<void> deleteReminder(String userId, String reminderId) async {
