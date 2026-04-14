@@ -27,21 +27,6 @@ class _NotesScreenState extends ConsumerState<NotesScreen> {
       appBar: AppBar(
         title: const Text('MIS NOTAS'),
         centerTitle: ResponsiveUtils.isDesktop(context),
-        actions: [
-          notesAsync.when(
-            data: (notes) => Padding(
-              padding: const EdgeInsets.only(right: 16.0),
-              child: Center(
-                child: Text(
-                  '${notes.length}',
-                  style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
-                ),
-              ),
-            ),
-            loading: () => const SizedBox.shrink(),
-            error: (_, __) => const SizedBox.shrink(),
-          ),
-        ],
       ),
       body: ResponsiveContainer(
         child: Column(

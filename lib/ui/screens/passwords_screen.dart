@@ -207,13 +207,29 @@ class OtpCard extends StatelessWidget {
                     ),
                   ),
                 ),
-                IconButton(
-                  icon: Icon(Icons.delete_outline, color: Theme.of(context).colorScheme.onSurfaceVariant, size: 20),
-                  onPressed: () {
-                    // Delete logic
-                  },
-                  padding: EdgeInsets.zero,
-                  constraints: const BoxConstraints(),
+                Row(
+                  children: [
+                    IconButton(
+                      icon: Icon(Icons.copy_all, color: Theme.of(context).colorScheme.onSurfaceVariant, size: 20),
+                      onPressed: () {
+                        Clipboard.setData(ClipboardData(text: code));
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          const SnackBar(content: Text('CÓDIGO COPIADO')),
+                        );
+                      },
+                      padding: const EdgeInsets.only(right: 8),
+                      constraints: const BoxConstraints(),
+                      tooltip: 'COPIAR CÓDIGO',
+                    ),
+                    IconButton(
+                      icon: Icon(Icons.delete_outline, color: Theme.of(context).colorScheme.onSurfaceVariant, size: 20),
+                      onPressed: () {
+                        // Delete logic
+                      },
+                      padding: EdgeInsets.zero,
+                      constraints: const BoxConstraints(),
+                    ),
+                  ],
                 ),
               ],
             ),

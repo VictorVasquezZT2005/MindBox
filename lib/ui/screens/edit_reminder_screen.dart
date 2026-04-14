@@ -113,7 +113,10 @@ class _EditReminderScreenState extends ConsumerState<EditReminderScreen> {
                             if (_hasDate && _selectedDate != null)
                               TextButton(
                                 onPressed: () => _selectDate(context),
-                                child: Text(intl.DateFormat('dd/MM/yyyy').format(_selectedDate!), style: const TextStyle(fontSize: 12, fontWeight: FontWeight.bold, color: Colors.black)),
+                                child: Text(
+                                  intl.DateFormat('dd/MM/yyyy').format(_selectedDate!), 
+                                  style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold, color: Theme.of(context).colorScheme.primary)
+                                ),
                               ),
                           ],
                         ),
@@ -131,7 +134,10 @@ class _EditReminderScreenState extends ConsumerState<EditReminderScreen> {
                             if (_hasTime && _selectedTime != null)
                               TextButton(
                                 onPressed: () => _selectTime(context),
-                                child: Text(_selectedTime!.format(context), style: const TextStyle(fontSize: 12, fontWeight: FontWeight.bold, color: Colors.black)),
+                                child: Text(
+                                  _selectedTime!.format(context), 
+                                  style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold, color: Theme.of(context).colorScheme.primary)
+                                ),
                               ),
                           ],
                         ),
@@ -142,32 +148,36 @@ class _EditReminderScreenState extends ConsumerState<EditReminderScreen> {
                 
                 const SizedBox(height: 24),
                 _buildSectionHeader('CATEGORIZACIÓN'),
-                const SizedBox(height: 8),
-                Wrap(
-                  spacing: 8,
-                  children: _categories.map((cat) {
-                    final isSelected = _selectedCategory == cat;
-                    return ChoiceChip(
-                      label: Text(cat.toUpperCase(), style: const TextStyle(fontSize: 10, fontWeight: FontWeight.bold)),
-                      selected: isSelected,
-                      onSelected: (selected) => setState(() => _selectedCategory = cat),
-                      showCheckmark: false,
-                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
-                      selectedColor: Colors.black,
-                      labelStyle: TextStyle(color: isSelected ? Colors.white : Colors.black),
-                    );
-                  }).toList(),
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    children: _categories.map((cat) {
+                      final isSelected = _selectedCategory == cat;
+                      return Padding(
+                        padding: const EdgeInsets.only(right: 8.0),
+                        child: ChoiceChip(
+                          label: Text(cat.toUpperCase(), style: const TextStyle(fontSize: 10, fontWeight: FontWeight.bold)),
+                          selected: isSelected,
+                          onSelected: (selected) => setState(() => _selectedCategory = cat),
+                          showCheckmark: false,
+                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
+                          selectedColor: Theme.of(context).colorScheme.primary,
+                          labelStyle: TextStyle(color: isSelected ? Theme.of(context).colorScheme.onPrimary : Theme.of(context).colorScheme.onSurface),
+                        ),
+                      );
+                    }).toList(),
+                  ),
                 ),
                 
-                const SizedBox(height: 16),
+                const SizedBox(height: 24),
                 Row(
                   children: [
                     Checkbox(
                       value: _isUrgent,
                       onChanged: (val) => setState(() => _isUrgent = val ?? false),
-                      activeColor: Colors.black,
+                      activeColor: Theme.of(context).colorScheme.primary,
                     ),
-                    Text('MARCAR COMO URGENTE', style: TextStyle(color: _isUrgent ? Colors.black : Colors.grey, fontSize: 12, fontWeight: FontWeight.bold)),
+                    Text('MARCAR COMO URGENTE', style: TextStyle(color: _isUrgent ? Theme.of(context).colorScheme.primary : Colors.grey, fontSize: 12, fontWeight: FontWeight.bold)),
                   ],
                 ),
                 

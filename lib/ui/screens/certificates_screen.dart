@@ -22,18 +22,6 @@ class _CertificatesScreenState extends ConsumerState<CertificatesScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('MIS LOGROS'),
-        actions: [
-          if (certificatesAsync.value != null)
-            Padding(
-              padding: const EdgeInsets.only(right: 16.0),
-              child: Center(
-                child: Text(
-                  '${certificatesAsync.value!.length}',
-                  style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
-                ),
-              ),
-            ),
-        ],
       ),
       body: Column(
         children: [
@@ -49,7 +37,12 @@ class _CertificatesScreenState extends ConsumerState<CertificatesScreen> {
           ),
           certificatesAsync.when(
             data: (certificates) {
-              final platforms = ['Todas', ...certificates.map((c) => c.platform).toSet().toList()..sort()];
+              final platforms = ['Todas', ...certificates.map((c) {
+                if (c.platform.startsWith('Credly /')) {
+                  return c.platform.replaceFirst('Credly / ', '');
+                }
+                return c.platform;
+              }).toSet().toList()..sort()];
               return SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -85,7 +78,13 @@ class _CertificatesScreenState extends ConsumerState<CertificatesScreen> {
               data: (certificates) {
                 final filtered = certificates.where((c) {
                   final matchesSearch = c.title.toLowerCase().contains(_searchQuery.toLowerCase());
-                  final matchesPlatform = _selectedPlatform == 'Todas' || c.platform == _selectedPlatform;
+                  
+                  String displayPlatform = c.platform;
+                  if (c.platform.startsWith('Credly /')) {
+                    displayPlatform = c.platform.replaceFirst('Credly / ', '');
+                  }
+                  
+                  final matchesPlatform = _selectedPlatform == 'Todas' || displayPlatform == _selectedPlatform;
                   return matchesSearch && matchesPlatform;
                 }).toList();
 
@@ -133,6 +132,11 @@ class CertificateCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    String displayPlatform = certificate.platform;
+    if (certificate.platform.startsWith('Credly /')) {
+      displayPlatform = certificate.platform.replaceFirst('Credly / ', '');
+    }
+
     return Card(
       margin: EdgeInsets.zero,
       child: InkWell(
@@ -164,7 +168,7 @@ class CertificateCard extends StatelessWidget {
                     ),
                     const SizedBox(height: 2),
                     Text(
-                      certificate.platform.toUpperCase(),
+                      displayPlatform.toUpperCase(),
                       style: const TextStyle(color: Colors.grey, fontWeight: FontWeight.bold, fontSize: 10, letterSpacing: 0.5),
                     ),
                   ],

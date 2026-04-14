@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import '../../providers/auth_provider.dart';
@@ -19,6 +20,7 @@ class DashboardScreen extends ConsumerStatefulWidget {
 
 class _DashboardScreenState extends ConsumerState<DashboardScreen> {
   int _currentIndex = 0;
+  DateTime? _lastPressedAt;
 
   final List<Widget> _screens = [
     const HomeDashboard(),
@@ -32,8 +34,31 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> {
   Widget build(BuildContext context) {
     final bool isMobile = ResponsiveUtils.isMobile(context);
 
-    return Scaffold(
-      body: Row(
+    return PopScope(
+      canPop: false,
+      onPopInvokedWithResult: (didPop, result) async {
+        if (didPop) return;
+        
+        final now = DateTime.now();
+        if (_lastPressedAt == null || 
+            now.difference(_lastPressedAt!) > const Duration(seconds: 2)) {
+          _lastPressedAt = now;
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(
+              content: Text('PRESIONA DE NUEVO PARA SALIR', 
+                style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold)
+              ),
+              duration: Duration(seconds: 2),
+            ),
+          );
+          return;
+        }
+        
+        // If we reach here, it's the second press within 2 seconds
+        SystemNavigator.pop();
+      },
+      child: Scaffold(
+        body: Row(
         children: [
           if (!isMobile)
             NavigationRail(
@@ -92,6 +117,7 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> {
               unselectedLabelStyle: const TextStyle(fontSize: 10, fontWeight: FontWeight.bold, letterSpacing: 0.5),
             )
           : null,
+      ),
     );
   }
 }
@@ -206,6 +232,7 @@ class HomeDashboard extends ConsumerWidget {
                           color: BrandOrange,
                           route: '/certificates'
                         ),
+                        const SizedBox(height: 8),
                         _buildShortcutItem(
                           context, 
                           title: 'MI RED', 
@@ -214,6 +241,7 @@ class HomeDashboard extends ConsumerWidget {
                           color: NetworkBlue,
                           route: '/stats'
                         ),
+                        const SizedBox(height: 8),
                         _buildShortcutItem(
                           context, 
                           title: 'ESCÁNER ID', 
@@ -222,6 +250,7 @@ class HomeDashboard extends ConsumerWidget {
                           color: BrandPurple,
                           route: '/document_scanner'
                         ),
+                        const SizedBox(height: 8),
                         _buildShortcutItem(
                           context, 
                           title: 'MI CV', 

@@ -21,6 +21,9 @@ class _AddCertificateScreenState extends ConsumerState<AddCertificateScreen> {
   final _titleController = TextEditingController();
   final _idController = TextEditingController();
   final _notesController = TextEditingController();
+  final _scoreController = TextEditingController();
+  final _credlyIdController = TextEditingController();
+  final _credlyIssuerController = TextEditingController();
   
   String _platformType = 'Carlos Slim';
   DateTime? _selectedDate;
@@ -28,7 +31,18 @@ class _AddCertificateScreenState extends ConsumerState<AddCertificateScreen> {
   Uint8List? _webPdfBytes;
   bool _isSaving = false;
 
-  final List<String> _platforms = ['Carlos Slim', 'Credly', 'Udemy', 'Otro'];
+  final List<String> _platforms = ['Carlos Slim', 'Credly', 'Otro'];
+
+  @override
+  void dispose() {
+    _titleController.dispose();
+    _idController.dispose();
+    _notesController.dispose();
+    _scoreController.dispose();
+    _credlyIdController.dispose();
+    _credlyIssuerController.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -39,12 +53,12 @@ class _AddCertificateScreenState extends ConsumerState<AddCertificateScreen> {
           if (!_isSaving)
             TextButton(
               onPressed: _titleController.text.isEmpty ? null : _saveCertificate,
-              child: const Text('GUARDAR', style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold)),
+              child: Text('GUARDAR', style: TextStyle(color: Theme.of(context).colorScheme.primary, fontWeight: FontWeight.bold)),
             )
           else
-            const Padding(
-              padding: EdgeInsets.all(16.0),
-              child: SizedBox(width: 20, height: 20, child: CircularProgressIndicator(strokeWidth: 2, color: Colors.black)),
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: SizedBox(width: 20, height: 20, child: CircularProgressIndicator(strokeWidth: 2, color: Theme.of(context).colorScheme.primary)),
             ),
         ],
       ),
@@ -54,7 +68,7 @@ class _AddCertificateScreenState extends ConsumerState<AddCertificateScreen> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             if (_isSaving) ...[
-              const LinearProgressIndicator(color: Colors.black),
+              LinearProgressIndicator(color: Theme.of(context).colorScheme.primary),
               const SizedBox(height: 12),
             ],
             _buildSectionHeader('PLATAFORMA / EMISOR'),
@@ -69,8 +83,8 @@ class _AddCertificateScreenState extends ConsumerState<AddCertificateScreen> {
                       label: Text(p.toUpperCase(), style: const TextStyle(fontSize: 10, fontWeight: FontWeight.bold)),
                       selected: isSelected,
                       onSelected: (val) => setState(() => _platformType = p),
-                      selectedColor: Colors.black,
-                      labelStyle: TextStyle(color: isSelected ? Colors.white : Colors.black),
+                      selectedColor: Theme.of(context).colorScheme.primary,
+                      labelStyle: TextStyle(color: isSelected ? Theme.of(context).colorScheme.onPrimary : Theme.of(context).colorScheme.onSurface),
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
                       showCheckmark: false,
                     ),
@@ -83,6 +97,18 @@ class _AddCertificateScreenState extends ConsumerState<AddCertificateScreen> {
               controller: _titleController,
               decoration: const InputDecoration(labelText: 'TÍTULO DEL CURSO'),
             ),
+            if (_platformType == 'Credly') ...[
+              const SizedBox(height: 24),
+              TextField(
+                controller: _credlyIssuerController,
+                decoration: const InputDecoration(labelText: 'EMISOR (EJ. CISCO)'),
+              ),
+              const SizedBox(height: 24),
+              TextField(
+                controller: _credlyIdController,
+                decoration: const InputDecoration(labelText: 'CREDLY ID'),
+              ),
+            ],
             const SizedBox(height: 24),
             _buildSectionHeader('FECHA DE EMISIÓN'),
             _buildSelectorTile(
@@ -91,9 +117,23 @@ class _AddCertificateScreenState extends ConsumerState<AddCertificateScreen> {
               onTap: () => _selectDate(context),
             ),
             const SizedBox(height: 24),
-            TextField(
-              controller: _idController,
-              decoration: const InputDecoration(labelText: 'FOLIO / ID (OPCIONAL)'),
+            Row(
+              children: [
+                Expanded(
+                  flex: 2,
+                  child: TextField(
+                    controller: _idController,
+                    decoration: const InputDecoration(labelText: 'FOLIO / ID'),
+                  ),
+                ),
+                const SizedBox(width: 16),
+                Expanded(
+                  child: TextField(
+                    controller: _scoreController,
+                    decoration: const InputDecoration(labelText: 'CALIF.'),
+                  ),
+                ),
+              ],
             ),
             const SizedBox(height: 24),
             _buildSectionHeader('ARCHIVO DE RESPALDO'),
@@ -191,10 +231,13 @@ class _AddCertificateScreenState extends ConsumerState<AddCertificateScreen> {
       final cert = Certificate(
         id: const Uuid().v4(),
         title: _titleController.text,
-        platform: _platformType,
+        platform: _platformType == 'Credly' ? 'Credly / ${_credlyIssuerController.text}' : _platformType,
         issueDate: _selectedDate != null ? intl.DateFormat('dd/MM/yyyy').format(_selectedDate!) : '',
         folio: _idController.text,
         notes: _notesController.text,
+        score: _scoreController.text,
+        credlyId: _platformType == 'Credly' ? _credlyIdController.text : null,
+        credlyIssuer: _platformType == 'Credly' ? _credlyIssuerController.text : null,
         pdfUrl: pdfUrl,
       );
 

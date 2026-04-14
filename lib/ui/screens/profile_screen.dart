@@ -135,16 +135,16 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
     return Column(
       children: [
         Container(
-          width: 100,
-          height: 100,
-          decoration: BoxDecoration(
-            color: NetworkBlue.withOpacity(0.05),
-            borderRadius: BorderRadius.circular(4),
-            border: Border.all(color: NetworkBlue.withOpacity(0.1)),
+          width: 120,
+          height: 120,
+          decoration: const BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage('assets/images/profile.png'),
+              fit: BoxFit.contain,
+            ),
           ),
-          child: const Icon(Icons.account_circle_outlined, color: NetworkBlue, size: 50),
         ),
-        const SizedBox(height: 16),
+        const SizedBox(height: 20),
         Text(
           _isEditing ? 'EDITAR MI PERFIL' : 'MI CUENTA DIGITAL',
           style: TextStyle(

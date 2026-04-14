@@ -152,19 +152,26 @@ class _NoteDetailScreenState extends ConsumerState<NoteDetailScreen> {
                                 if (_titleController.text.isNotEmpty)
                                   Padding(
                                     padding: const EdgeInsets.only(bottom: 16),
-                                    child: Text(
-                                      _titleController.text,
-                                      style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                                    child: SizedBox(
+                                      width: double.infinity,
+                                      child: Text(
+                                        _titleController.text,
+                                        style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                                        textAlign: TextAlign.left,
+                                      ),
                                     ),
                                   ),
-                                MarkdownBody(
-                                  data: _contentController.text.isEmpty ? '*Sin contenido*' : _contentController.text,
-                                  selectable: true,
-                                  styleSheet: MarkdownStyleSheet(
-                                    p: const TextStyle(fontSize: 16, height: 1.5),
-                                    h1: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-                                    h2: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-                                    listBullet: const TextStyle(fontSize: 16),
+                                SizedBox(
+                                  width: double.infinity,
+                                  child: MarkdownBody(
+                                    data: _contentController.text.isEmpty ? '*Sin contenido*' : _contentController.text,
+                                    selectable: true,
+                                    styleSheet: MarkdownStyleSheet(
+                                      p: const TextStyle(fontSize: 16, height: 1.5),
+                                      h1: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                                      h2: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                                      listBullet: const TextStyle(fontSize: 16),
+                                    ),
                                   ),
                                 ),
                               ],

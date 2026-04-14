@@ -42,7 +42,7 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions web = FirebaseOptions(
     apiKey: 'AIzaSyA80eZEAboM-fp-BGpl5OUDyb_m3e2il6E',
-    appId: '1:1034699988850:web:ec96b40ba5e90a89da47eb',
+    appId: '1:1034699988850:web:a0c50d54eae4c0a4da47eb',
     messagingSenderId: '1034699988850',
     projectId: 'mindbox-b839e',
     authDomain: 'mindbox-b839e.firebaseapp.com',
@@ -51,7 +51,7 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyB5kyORjMFjgbmCNqEKeqKT_NwqSP-d2-M',
-    appId: '1:1034699988850:android:fce5d3729c21a517da47eb',
+    appId: '1:1034699988850:android:16dcf17f4f6dce4fda47eb',
     messagingSenderId: '1034699988850',
     projectId: 'mindbox-b839e',
     storageBucket: 'mindbox-b839e.firebasestorage.app',
@@ -59,32 +59,33 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyABNI66WZOz-D9LDLyF-o4kK4KbH82RlrA',
-    appId: '1:1034699988850:ios:e665e8e7d4349311da47eb',
+    appId: '1:1034699988850:ios:7b444fab922eb67fda47eb',
     messagingSenderId: '1034699988850',
     projectId: 'mindbox-b839e',
     storageBucket: 'mindbox-b839e.firebasestorage.app',
     androidClientId: '1034699988850-8pbgpi90jal38u9dhffrm42d71v9d0vh.apps.googleusercontent.com',
-    iosClientId: '1034699988850-cjj2jgojsdv6hp9sp5o268fmfc81dhhq.apps.googleusercontent.com',
-    iosBundleId: 'xyz.zt.mindbox',
+    iosClientId: '1034699988850-fgugb8apf65kbc62jm8hptsfvgi9ou5j.apps.googleusercontent.com',
+    iosBundleId: 'mindbox.devninja.xyz',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
     apiKey: 'AIzaSyABNI66WZOz-D9LDLyF-o4kK4KbH82RlrA',
-    appId: '1:1034699988850:ios:e665e8e7d4349311da47eb',
+    appId: '1:1034699988850:ios:7b444fab922eb67fda47eb',
     messagingSenderId: '1034699988850',
     projectId: 'mindbox-b839e',
     storageBucket: 'mindbox-b839e.firebasestorage.app',
     androidClientId: '1034699988850-8pbgpi90jal38u9dhffrm42d71v9d0vh.apps.googleusercontent.com',
-    iosClientId: '1034699988850-cjj2jgojsdv6hp9sp5o268fmfc81dhhq.apps.googleusercontent.com',
-    iosBundleId: 'xyz.zt.mindbox',
+    iosClientId: '1034699988850-fgugb8apf65kbc62jm8hptsfvgi9ou5j.apps.googleusercontent.com',
+    iosBundleId: 'mindbox.devninja.xyz',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
     apiKey: 'AIzaSyA80eZEAboM-fp-BGpl5OUDyb_m3e2il6E',
-    appId: '1:1034699988850:web:5563bd25881771e7da47eb',
+    appId: '1:1034699988850:web:32fd2ba6241394b6da47eb',
     messagingSenderId: '1034699988850',
     projectId: 'mindbox-b839e',
     authDomain: 'mindbox-b839e.firebaseapp.com',
     storageBucket: 'mindbox-b839e.firebasestorage.app',
   );
+
 }
