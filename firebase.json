@@ -1,1 +1,32 @@
-{"flutter":{"platforms":{"dart":{"lib/firebase_options.dart":{"projectId":"mindbox-b839e","configurations":{"android":"1:1034699988850:android:16dcf17f4f6dce4fda47eb","ios":"1:1034699988850:ios:7b444fab922eb67fda47eb","macos":"1:1034699988850:ios:7b444fab922eb67fda47eb","web":"1:1034699988850:web:a0c50d54eae4c0a4da47eb","windows":"1:1034699988850:web:32fd2ba6241394b6da47eb"}}}}}}
+{
+  "flutter": {
+    "platforms": {
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "mindbox-b839e",
+          "configurations": {
+            "android": "1:1034699988850:android:16dcf17f4f6dce4fda47eb",
+            "ios": "1:1034699988850:ios:7b444fab922eb67fda47eb",
+            "macos": "1:1034699988850:ios:7b444fab922eb67fda47eb",
+            "web": "1:1034699988850:web:a0c50d54eae4c0a4da47eb",
+            "windows": "1:1034699988850:web:32fd2ba6241394b6da47eb"
+          }
+        }
+      }
+    }
+  },
+  "hosting": {
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
